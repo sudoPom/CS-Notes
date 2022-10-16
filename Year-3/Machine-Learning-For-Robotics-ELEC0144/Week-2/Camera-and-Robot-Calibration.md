@@ -352,7 +352,7 @@ This process is repeated 3 times for a set of 3 $H$ values, where each image of 
 
 ![[Pasted image 20221016151933.png]]
 
-## Recovering Extrinsic Parameters
+### Recovering Intrinsic Parameters
 With the $h$ values we will then try to recover the intrinsic parameters using a method discovered by **Zhengyou Zhang**. The equation relating $H$ to the parameters is:
 
 $$
@@ -448,7 +448,7 @@ K =
  
 \end{align}
 $$
-## Recovering Extrinsic Parameters
+### Recovering Extrinsic Parameters
 Once $K$ is known we can recover the extrinsic image for each of the checkerboard images (since they are each in different positions and orientations).
 
 For a given image we have:
@@ -492,3 +492,92 @@ r_3 &= r_1 \times r_2 \\
 \end{align}
 $$
 
+## Robot Calibration
+Robot calibration is the process of finding the relationship between the 3D robot frame and the 3D world franme. This can be done by placing the checkerboard on the object. Next the robot is moved so that the end effector touches the corner points of the checkerboard.
+
+At each corner point we can find the position of the TCP end effector with respect to the robot frame $(X_{ri}, Y_{ri}, Z_{ri})$ by using [[Year-2/Introduction-To-Robotics-ELEC0129/Week-4/Forward-Kinematics|forward kinematics]].  We also know the position of the corner point $(X_i, Y_i, 0)$ with respect to the world frame.
+
+Thius we therefore have the relationship between the two frames as:
+
+$$
+\begin{align}
+
+\begin{bmatrix}
+X_{ri} \\ 
+Y_{ri} \\ 
+Z_{ri}  \\ 
+1 
+\end{bmatrix}
+ = 
+\begin{bmatrix}
+\rho_{11} & \rho_{12} & \rho_{13} & t_x \\ 
+\rho_{21} & \rho_{22} &\rho_{23} & t_y \\ 
+\rho_{31} & \rho_{32} & \rho_{33} & t_z \\ 
+0 & 0 & 0 & 1 
+\end{bmatrix}
+ 
+\begin{bmatrix}
+X_i \\ 
+Y_i \\ 
+0  \\ 
+1 
+\end{bmatrix}
+ 
+\end{align}
+$$
+These parameters $\rho$ and $t$ can be found using a method devised by **Cashbaugh et al**.
+
+The individual linear equations are:
+
+$$
+\begin{align}
+X_{ri} = \rho_{11}X_i + \rho_{12}Y_i + t_x \\
+Y_{ri} = \rho_{21}X_i + \rho_{22}Y_i + t_y \\
+Z_{ri} = \rho_{31}X_i + \rho_{32}Y_i + t_z \\
+\end{align}
+$$
+We can obtain the unknown parameters by **minimizing the square of errors** which are:
+
+
+$$
+\begin{align}
+E^2_X = \Sigma^n_{i=1}(X_{ri} - (\rho_{11}X_i + \rho_{12}Y_i + t_x))^2\\
+E^2_Y = \Sigma^n_{i=1}(X_{ri} - (\rho_{21}X_i + \rho_{22}Y_i + t_y))^2\\
+E^2_Z = \Sigma^n_{i=1}(X_{ri} - (\rho_{31}X_i + \rho_{32}Y_i + t_z))^2
+\end{align}
+$$
+
+The minimum value of the square of errors occurs when the derivatives are zero, for $E_X^2$ we have:
+$$
+\begin{align}
+&\frac{\partial E^2_X}{\partial t_x} = -2\Sigma^n_{i=1}(X_{ri} - (\rho_{11}X_i + \rho_{12}Y_i + t_x)X_i2 = 0\\
+&\frac{\partial E^2_Y}{\partial t_y} = -2\Sigma^n_{i=1}(X_{ri} - (\rho_{11}X_i + \rho_{12}Y_i + t_x))Y_i = 0\\
+&\frac{\partial E^2_Z}{\partial t_z} = -2\Sigma^n_{i=1}(X_{ri} - (\rho_{11}X_i + \rho_{12}Y_i + t_x)) = 0
+\end{align}
+$$
+
+The equation can be re written as:
+
+![[Pasted image 20221016170246.png]]
+
+Or in matrix form as:
+
+![[Pasted image 20221016170502.png]]
+
+The rotation parameters can then be found by solving this equation:
+
+![[Pasted image 20221016170607.png]]
+
+The remaining parameters can be obtained in the same way by using the $E^2_Y$ and $E^2_Z$ equations:
+
+![[Pasted image 20221016170728.png]]
+
+![[Pasted image 20221016170759.png]]
+
+Finally, $(\rho_{13}, \rho_{23}, \rho_{33})$ can be calculated as:
+
+$$
+\begin{align}
+
+\end{align}
+$$

@@ -20,6 +20,22 @@
             }
           }
         ]
+      },
+      {
+        "id": "be21c0697e02f7d6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cda902e2e325055e",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Week02 Camera n Robot Calibration.pdf"
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -104,8 +120,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5,
-    "collapsed": true
+    "width": 290.5
   },
   "right": {
     "id": "58493915ba98c30b",
@@ -181,15 +196,15 @@
   },
   "active": "60cd0d0c3a567812",
   "lastOpenFiles": [
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Mapping.md",
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Week02 Camera n Robot Calibration.pdf",
     "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Camera-and-Robot-Calibration.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Mapping.md",
     "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
     "Year-3/Computability-and-Complexity-Theory-COMP0017/Computability-and-Complexity-Theory-COMP0017.md",
     "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-2/Alternate-Modes-of-Computation.md",
     "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
     "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-2/Closure-Properties-of-Languages.md",
     "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-1/Lecture-2.pdf",
-    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
-    "Year-3/Computer-Graphics-COMP0027/Computer-Graphics-COMP0027.md"
+    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md"
   ]
 }
