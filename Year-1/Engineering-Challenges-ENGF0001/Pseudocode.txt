@@ -1,0 +1,97 @@
+Temperature Subsystem
+
+DISPLAY("What temperature do you want the system to be? (Celcius)")
+desiredTemperature = USERINPUT()
+
+WHILE desiredTemperature < 25 || desiredTemperature > 35
+{
+    DISPLAY("Temperature must be within 25 and 35 degrees")
+    desiredTemperature = USERINPUT()
+}
+
+WHILE(1)
+{
+    ADCValue = INPUT(thermistorPin)
+
+    //Do some calculations on the ADC value to calculate the voltage across the thermistor.
+    //Store in voltage float variable
+
+    temperature = convertToTemperature(voltage)
+    DISPLAY(temperature, Degrees Celcius)
+    differenceInTemp = ABSOLUTE(temperature-desiredTemperature)
+    IF temperature > desiredTemperature then:
+        //Turn the heater off
+        thermistorPin.WRITEADC(0)
+    ELSE:
+        //Calculate the change needed in the voltage to increase the temperature by the differenceInTemp
+        //Convert this value to the corresponding ADC value
+        //Store in ADCChange float variable
+        thermistorPin.WRITEADC(ADCChange)
+    
+    SLEEP(5000) //Repeat this every 5 seconds
+}
+
+
+Stirring Subsystem
+
+DISPLAY("How fast should the stirring element stir the solution (Revolutions Per Minute)?")
+desiredRPM = USERINPUT()
+
+WHILE desiredRPM < 500 || desiredRPM > 1500
+{
+    DISPLAY("RPM must be between 500 and 1500")
+    desiredTemperature = USERINPUT()
+}
+
+WHILE(1)
+{
+    ADCValue = INPUT(photoInterruptor)
+
+    //Do some calculations on the ADC value to calculate the voltage across the photoInterruptor.
+    //Store in voltage float variable
+
+    pulses = convertToPulsesPerSecond(voltage)
+    RPM = 60*(pulses/2)
+    DISPLAY(RPM, "Revolutions Per Minute)
+    differenceInRPM = ABSOLUTE(RPM - desiredRPM)
+    IF RPM > desiredRPM then:
+        //Calculate the change needed in the voltage to increase the RPM by the differenceInRPM
+        //Convert this value to the corresponding ADC value
+        //Store in ADCChange float variable
+        photoInterruptorPin.WRITEADC(ADCChange)
+    ELSE then:
+        //Calculate the change needed in the voltage to decrease the RPM by the differenceInRPM
+        //Convert this value to the corresponding ADC value
+        //Store in ADCChange float variable
+        photoInterruptorPin.WRITEADC(ADCChange)
+
+    SLEEP(5000) //Repeat this every 5 seconds
+}
+
+pH Subsystem
+
+DISPLAY("What should the pH of the solution be (Between 3 and 7)?")
+desiredPH = USERINPUT()
+
+WHILE desiredPH < 3 || desiredPH > 7
+{
+    DISPLAY("pH must be between 3 and 7")
+    desiredTemperature = USERINPUT()
+}
+
+WHILE(1)
+{
+    ADCValue = INPUT(pHProbePin)
+
+    //Do some calculations on the ADV value to calculate the voltage across the pH probe.
+    //Store in voltage float variable
+
+    pH = convertToPH(voltage)
+    DISPLAY(PH, "pH")
+    IF pH < desiredPH then:
+        //Solution is too acidic, turn on base pump
+    ELSE then:
+        //Solution is to basic, so turn on acid pump
+
+    SLEEP(5000) //Repeat every 5 seconds
+}

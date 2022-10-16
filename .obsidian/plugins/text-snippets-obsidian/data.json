@@ -1,0 +1,26 @@
+{
+  "snippets_file": "snippets : It is an obsidian plugin, that replaces your selected text.\nmathb : $$$nl$\n\\begin{align}$nl$\n$end$$nl$\n\\end{align}$nl$\n$$\ntext : \\text{$end$}\n\nmat2 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 \\\\ $nl$\n0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$\n\nmat3 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$\n\nmat4 : $nl$\n\\begin{bmatrix}$nl$\n$tb$0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$\n\nvec2 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$\n\nvec3 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0  \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$\n\nvec4 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0 \\\\ $nl$\n0  \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$\n\ncol3 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$\n\ncol2 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$\n\ncol4 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$",
+  "snippets": [
+    "snippets : It is an obsidian plugin, that replaces your selected text.",
+    "mathb : $$$nl$\n\\begin{align}$nl$\n$end$$nl$\n\\end{align}$nl$\n$$",
+    "text : \\text{$end$}",
+    "mat2 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 \\\\ $nl$\n0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "mat3 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "mat4 : $nl$\n\\begin{bmatrix}$nl$\n$tb$0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n0 & 0 & 0 & 0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "vec2 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "vec3 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0  \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "vec4 : $nl$\n\\begin{bmatrix}$nl$\n0 \\\\ $nl$\n0 \\\\ $nl$\n0  \\\\ $nl$\n0 $nl$\n\\end{bmatrix}$nl$ $end$",
+    "col3 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$",
+    "col2 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$",
+    "col4 : $nl$\n\\begin{bmatrix}$nl$\n0 & 0 & 0 & 0 \\\\ $nl$\n\\end{bmatrix}$nl$ $end$"
+  ],
+  "endSymbol": "$end$",
+  "newlineSymbol": "$nl$",
+  "stopSymbol": "$tb$",
+  "pasteSymbol": "$pst$",
+  "useTab": true,
+  "useSpace": false,
+  "wordDelimiters": "$()[]{}<>,.!?;:'\"/",
+  "isWYSIWYG": true,
+  "isWYSISWYG": true
+}

@@ -1,0 +1,44 @@
+{
+  "collapse-filter": false,
+  "search": "-path:Year-2/Software-Engineering-COMP0010/Coursework",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:Year-2/Introduction-To-Robotics-ELEC0129",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "path:Year-2/Computer-Architecture-and-Concurrency-COMP0008",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
+    },
+    {
+      "query": "path:Year-2/Security-COMP0141",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -1.1,
+  "nodeSizeMultiplier": 0.870786516853933,
+  "lineSizeMultiplier": 0.788202247191011,
+  "collapse-forces": false,
+  "centerStrength": 0.222527472527473,
+  "repelStrength": 11.8131868131868,
+  "linkStrength": 0.778089887640449,
+  "linkDistance": 113,
+  "scale": 0.26985987345795337,
+  "close": true
+}

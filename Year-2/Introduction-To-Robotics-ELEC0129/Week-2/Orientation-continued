@@ -1,0 +1,10 @@
+# Orientations continued
+
+Using matrices to represent rotations can become confusing quickly as it can be hard to visualise a transformation just by looking at a matrix, especially since they contain 9 parameters.
+
+There are 6 constraints on the rotation matrix:
+$$
+|\hat{x}| =\space|\hat{y}| =\space |\hat{z}| = 1
+\newline\hat{x}\cdot\hat{y} = \hat{x}\cdot\hat{z}  = \hat{z}\cdot\hat{y} = 0
+$$
+Therefore the rotation should be able to be coded with just three parameters.

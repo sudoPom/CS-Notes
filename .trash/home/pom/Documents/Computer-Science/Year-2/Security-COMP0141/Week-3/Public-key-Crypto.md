@@ -1,0 +1,1 @@
+* $N = pq$ where $p,q$ are large prime numbers (usually 2048 bits or longer)
