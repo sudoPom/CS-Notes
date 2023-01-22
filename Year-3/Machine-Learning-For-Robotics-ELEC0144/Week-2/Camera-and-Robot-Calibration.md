@@ -1,3 +1,4 @@
+
 For robots to be able to interact with objects they have an image of they need to be able to know the objects position and orientation wit
  ## Camera Calibration
  
@@ -344,7 +345,7 @@ $$
 $$
 
 Then the vector $h$ will be the column of $V$ corresponding to the smallest singular value in $\Sigma$.
-**Matlab has an SVD function which will order  $V$  in descending order, meaning $h$ will be in the LAST COLUMN OF $V$.   ^ed895d
+**Matlab has an SVD function which will order  $V$  in descending order, meaning $h$ will be in the LAST COLUMN OF $V$. 
 
 With this matrix, $H$ is found for one image of the checkerboard.
 
@@ -359,7 +360,7 @@ $$
 \begin{align}
 H = 
 \begin{bmatrix}
-0 & 0 & 0 \\ 
+h_1 & h_2 & h_3 \\ 
 \end{bmatrix}
  = K
 
@@ -579,5 +580,105 @@ Finally, $(\rho_{13}, \rho_{23}, \rho_{33})$ can be calculated as:
 $$
 \begin{align}
 
+\begin{bmatrix}
+\rho_{13} \\ 
+\rho_{23}  \\ 
+\rho_{33} 
+\end{bmatrix}
+ = 
+\begin{bmatrix}
+\rho_{11} \\ 
+\rho_{21}  \\ 
+\rho_{31} 
+\end{bmatrix}
+ \times 
+\begin{bmatrix}
+\rho_{12} \\ 
+\rho_{22}  \\ 
+\rho_{32} 
+\end{bmatrix}
+ 
 \end{align}
 $$
+## Combining Everything
+
+With all of this, we can finally calculate the 3D position of an object in the robot frame $(X_r, Y_r, Z_r)$ given the 2D position of the same image in pixel frame ($x,y$).
+
+The relationship between pixel coordinate and world coordinate is:
+$$
+\begin{align}
+
+\begin{bmatrix}
+x \\ 
+y  \\ 
+1 
+\end{bmatrix}
+ \sim K 
+\begin{bmatrix}
+r_1 & r_2 & ^CP_{Worigin} \\ 
+\end{bmatrix}
+ 
+\begin{bmatrix}
+X \\ 
+Y  \\ 
+1 
+\end{bmatrix}
+ =H 
+\begin{bmatrix}
+X \\ 
+Y  \\ 
+1 
+\end{bmatrix}
+ 
+\end{align}
+$$
+From which we obtain 
+
+$$
+\begin{align}
+
+\begin{bmatrix}
+X \\ 
+Y  \\ 
+1 
+\end{bmatrix}
+ \sim H^{-1} 
+\begin{bmatrix}
+x \\ 
+y  \\ 
+1 
+\end{bmatrix}
+ 
+\end{align}
+$$
+The result of the right hand side needs to be normalized such that the last row is $1$.
+
+LASTLY the relationship between the robot frame and the world coordinate is:
+
+$$
+\begin{align}
+
+\begin{bmatrix}
+X_{ri} \\ 
+Y_{ri} \\ 
+Z_{ri}  \\ 
+1 
+\end{bmatrix}
+ = 
+\begin{bmatrix}
+\rho_{11} & \rho_{12} & \rho_{13} & t_x \\ 
+\rho_{21} & \rho_{22} &\rho_{23} & t_y \\ 
+\rho_{31} & \rho_{32} & \rho_{33} & t_z \\ 
+0 & 0 & 0 & 1 
+\end{bmatrix}
+ 
+\begin{bmatrix}
+X_i \\ 
+Y_i \\ 
+0  \\ 
+1 
+\end{bmatrix}
+ 
+\end{align}
+$$
+We can put the values of $X$ and $Y$ can be put into this equation to find $(X_r, Y_r, Z_r)$ 

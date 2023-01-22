@@ -1,0 +1,4 @@
+`tags:` [[Year-3/Computability-and-Complexity-Theory-COMP0017/Theorems-and-Facts/Rice's Theorem]]
+
+![[Year-3/Computability-and-Complexity-Theory-COMP0017/Theorems-and-Facts/Rice's Theorem]]
+

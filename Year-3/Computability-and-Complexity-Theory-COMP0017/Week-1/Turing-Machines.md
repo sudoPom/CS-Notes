@@ -32,6 +32,8 @@ $$
 \end{align}
 $$
 
+^dcdea6
+
 The transition function is a set of 4-tuples:
 $$
 \begin{align}
