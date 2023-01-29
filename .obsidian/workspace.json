@@ -42,9 +42,81 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "664758a921a5d423",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Functional-Programming-COMP0020/Week-3/Designing-Simple-Programs.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fbe1a61d24304c49",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1d258c30c62e840f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a25813f07a2092fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ffb1fea010bb23f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d869d26cfbb1dd4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Week-3/Orthopaedic Surgery.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -96,7 +168,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Week-2/Rehabilitation, Assistive and Prosthetic Robotics.md",
+                "file": "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Week-3/Orthopaedic Surgery.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -129,8 +201,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.49999618530273,
-    "collapsed": true
+    "width": 286.49999618530273
   },
   "right": {
     "id": "58493915ba98c30b",
@@ -169,7 +240,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Week-2/Rehabilitation, Assistive and Prosthetic Robotics.md",
+                "file": "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Week-3/Orthopaedic Surgery.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -214,17 +285,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ddec5b210a462bde",
+  "active": "d869d26cfbb1dd4e",
   "lastOpenFiles": [
     "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
-    "Year-3/Functional-Programming-COMP0020/Week-2/Functions.md",
-    "Year-3/Functional-Programming-COMP0020/Week-2/Miranda.md",
-    "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
-    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
-    "Untitled 1.md",
-    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
+    "Year-3/Functional-Programming-COMP0020/Week-3/Designing-Simple-Programs.md",
+    "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
     "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
-    "Year-3/Functional-Programming-COMP0020/Week-2/Lecture 04.pdf",
-    "Year-3/Functional-Programming-COMP0020/Week-1/Lecture 03.pdf"
+    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Undefined Arithmetic.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/HOW-TO-POINTER.md",
+    "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
+    "Year-3/Functional-Programming-COMP0020/Week-3/Lecture 08.pdf"
   ]
 }
