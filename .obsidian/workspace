@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "4ebf3d523c845319",
+        "id": "28e909735bb63489",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
+            "file": "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
             "mode": "source",
             "source": false
           }
@@ -63,7 +63,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -135,7 +135,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -161,23 +161,41 @@
             }
           }
         ]
+      },
+      {
+        "id": "3ae31dfba0859efd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ebf3d523c845319",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Year-3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "active": "4ebf3d523c845319",
+  "active": "28e909735bb63489",
   "lastOpenFiles": [
-    "Year-3/Computer-Graphics-COMP0027/Week-2/Local-Illumination.md",
+    "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
+    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+    "Year-3/Functional-Programming-COMP0020/Drawing 2023-01-29 23.55.13.excalidraw.md",
+    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+    "Excalidraw/Drawing 2023-01-29 23.53.18.excalidraw.md",
+    "Year-3/Year-3.md",
     "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
+    "Year-3/Computer-Graphics-COMP0027/Week-2/Local-Illumination.md",
     "Year-3/Computer-Graphics-COMP0027/Computer-Graphics-COMP0027.md",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-1/Image-Processing.md",
-    "Year-3/Computability-and-Complexity-Theory-COMP0017/Computability-and-Complexity-Theory-COMP0017.md",
-    "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-1/Decidability-and-Recognizability.md",
-    "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-1/Turing-Machines.md",
-    "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-2/Closure-Properties-of-Languages.md",
-    "Year-3/Computability-and-Complexity-Theory-COMP0017/Week-2/The-Church-Turing-Thesis.md",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md"
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-1/Image-Processing.md"
   ]
 }
