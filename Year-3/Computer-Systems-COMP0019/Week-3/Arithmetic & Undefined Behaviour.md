@@ -34,4 +34,17 @@ Defined behaviour is where the C99 standard explicitly specified what result the
 * Programmer error involving pointers and memory allocation/deallocation
 * Integer overflow - for signed arithmetic.
 
-Checking for undefined behaviour is possible but will cost performance.
+Checking for undefined behaviour is possible but will cost performance. Other languages like Java do so, but C doesn't making it's resulting code run faster.
+
+Some compilers can detect UB and will discard code, which is fine according to C99. This can be problematic in situations where you use assertions to ensure undefined behaviour doesn't occur:
+
+```c
+int check_signed_increment(int c){
+	assert(x+1 > x); // This could be dropped when x = INT_MAX
+	return x+1;
+}
+```
+
+Generally it is best to check if behaviour is undefined without carrying out the actual undefined behaviour.
+
+C operates under the assumption that the programmer will not cause undefined behaviour and will optimize out if statements where
