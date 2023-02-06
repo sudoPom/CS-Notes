@@ -78,13 +78,13 @@ $$
 
 ### Implicit Free Lists
 
-An allocator needs some way of keeping track of the boundaries between blocks, and a way to distinguish free blocks from allocated blocks. One way of doing this is implicityl within the block of memory. The block can contain a header which stores the size of the block, followed by the payload and optional padding:
+An allocator needs some way of keeping track of the boundaries between blocks, and a way to distinguish free blocks from allocated blocks. One way of doing this is implicitly within the block of memory. The block can contain a header which stores the size of the block, followed by the payload and optional padding:
 
 ![[Pasted image 20230201220818.png]]
 
 Assuming a double word allignment rule (8 bytes) addresses will always be saved at multiples of 8, meaning the last 3 bits of the block size will be 0. This means we can use the last 3 bits to encode something else, in this case it is whether or not the block is allocated or free.
 
-At the end of the heap space we need a special "end" block which has a size and allocated bit of 0. The Implicit Free list is simple but inefficient as it takes linear time to search the free list. The systems allignment requirement as well as the allocators block format imposes a minimum block size rule.
+At the end of the heap space we need a special "end" block which is set to allocated and has a size of 0. The Implicit Free list is simple but inefficient as it takes linear time to search the free list. The systems allignment requirement as well as the allocators block format imposes a minimum block size rule.
 
 Allocated blocks can be placed in three ways:
 * First fit: Searches through the implicit free list allocates first block found that is big enough.
@@ -105,7 +105,9 @@ Coalescing can be done either immediately (after a block is freed) or deferred (
 
 ![[Pasted image 20230201223809.png]]
 
-The main disadvantage of boundary tags is that it results in a large overhead as the number of blocks in the heap grows. A small optimization can be made by making the allocated/free bit accessible in the low order bits of the block meaning that when checking the previous block to see if it is freeable you just need to check that bit, which can be done in constant time still.
+The main disadvantage of boundary tags is that it results in a large overhead as the number of blocks in the heap grows. A small optimization can be made by making the allocated/free bit accessible in the low order bits of the block meaning that when checking the previous block to see if it is freeable you just need to check that bit, which can be done in constant time still. 
+
+You could also store the allocation bit of the previous block to remove the need of the footer block entirely. This is only possible if allocation sizes of multiple of 4 or more (so there are 2 free bits available).
 
 ### Explicit Free List
 

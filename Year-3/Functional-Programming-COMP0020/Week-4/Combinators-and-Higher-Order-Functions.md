@@ -65,3 +65,17 @@ sumThree :: num -> num -> num -> num
 sumThree takes in a number and returns a function that takes in a number and returns a function that takes in a number and returns a number, which should be the sum of the three input numbers. 
 
 It is also valid to only pass in two input arguments to `sumThree`, which will in turn return the type `num -> num` - a function which takes in a number and returns a number. This is called **partial application** and can be done for any of input arguments.
+
+In Miranda the infix `.` is used for composition:
+
+```
+many2 :: num -> num
+many2 = (twice . twice . twice . twice)
+```
+
+This is equivalent to:
+
+```
+many2 :: num -> num
+many2 x = twice(twice(twice(twice x)))
+``` 
