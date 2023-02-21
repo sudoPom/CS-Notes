@@ -58,6 +58,8 @@ On the other hand, accumulate adds the identity element to the left of the strin
 ((0 + 1) + 2) + 3
 ```
 
+`foldl` does not work on infinite functions.
+
 It is safe to substitute one of these instructions for the other, given that the dyadic function is both associative and commutative.
 
 A function is associative if:
@@ -74,6 +76,20 @@ func y x = func x y
 
 This only needs to be the case for the identity element.
 
+Dyadic functions can be made infix by using the `$` operator:
+
+```
+func x y = x $func y
+```
+
+The `foldl` function has a more space efficient version which makes use of the `seq` operator:
+
+```
+seq a b
+```
+
+`seq` checks to see that the first value, `a` is not undefined. The result that is returned is `b`. An infinite loop is an example of something that is undefined. 
+
 #### List Selection
 
 List selection is the process of removing elements from a list that do not satisfy a given condition. This is normally a function that takes in a value and returns a boolean value:
@@ -86,3 +102,4 @@ myFilter cond (x:xs) = x : myFilter cond xs, if cond x
 ```
 
 This can be done in miranda using the `filter` function.
+

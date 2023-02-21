@@ -5,7 +5,7 @@ The first intel processor was the 8086 processor. It operated using 16 bits and 
 
 Each processor is designed to be backwards compatible - a 64 bit processor has   all the capabilities a 32 bit processor has.
 
-Transistors increase due to improvements in the engineering methods. Each transistor has a feature size which is the width of the narrowest wires in the transistor. This size reduction over time allows more transistors to fit on a CPU
+Transistors increase due to improvements in the engineering methods. Each transistor has a feature size which is the width of the narrowest wires in the transistor. This size reduction over time allows more transistors to fit on a CPU.
 
 ### Program Compilation
 

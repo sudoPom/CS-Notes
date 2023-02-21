@@ -2,5 +2,10 @@
   "baseFontSize": 15,
   "cssTheme": "",
   "translucency": false,
-  "accentColor": ""
+  "accentColor": "",
+  "theme": "obsidian",
+  "enabledCssSnippets": [
+    "obsidian-workspace-background(Shiba Uni Theme)"
+  ],
+  "textFontFamily": "Comic Code Ligatures"
 }
