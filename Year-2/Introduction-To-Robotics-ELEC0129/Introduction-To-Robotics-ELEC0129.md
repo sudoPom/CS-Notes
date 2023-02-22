@@ -3,18 +3,21 @@
 ```ccard
 type: folder_brief_live
 ```
- 
-## Tags
-### Week 2
+
+## Week 1
 [[Mapping]]
+[[Spatial-Description-and-Transformation]]
 [[Terminology]]
+
+### Week 2
+[[Inverse-of-Homogeneous-Matrix]]
+[[XYZ-Fixed-Angles]]
+[[ZYX-Euler-Angles]]
 
 ### Week 3
 [[Equivalent-Angle-Axis]]
 [[Euler-Parameters]]
-[[Inverse-of-Homogeneous-Matrix]]
-[[XYZ-Fixed-Angles]]
-[[ZYX-Euler-Angles]]
+
 
 ### Week 4
 [[Forward-Kinematics]]

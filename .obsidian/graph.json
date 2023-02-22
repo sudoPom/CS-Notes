@@ -27,6 +27,34 @@
         "a": 1,
         "rgb": 11657298
       }
+    },
+    {
+      "query": "path:Year-3/Functional-Programming-COMP0020",
+      "color": {
+        "a": 1,
+        "rgb": 14634208
+      }
+    },
+    {
+      "query": "path:Year-3/Computer-Systems-COMP0019",
+      "color": {
+        "a": 1,
+        "rgb": 5431473
+      }
+    },
+    {
+      "query": "path:Year-3/Computability-and-Complexity-Theory-COMP0017",
+      "color": {
+        "a": 1,
+        "rgb": 15489048
+      }
+    },
+    {
+      "query": "path:Year-3/Computer-Graphics-COMP0027",
+      "color": {
+        "a": 1,
+        "rgb": 5383081
+      }
     }
   ],
   "collapse-display": true,
@@ -35,10 +63,10 @@
   "nodeSizeMultiplier": 0.870786516853933,
   "lineSizeMultiplier": 0.788202247191011,
   "collapse-forces": false,
-  "centerStrength": 0.222527472527473,
+  "centerStrength": 0.4375,
   "repelStrength": 11.8131868131868,
   "linkStrength": 0.778089887640449,
   "linkDistance": 113,
-  "scale": 0.26985987345795337,
-  "close": true
+  "scale": 0.18862143021164127,
+  "close": false
 }
