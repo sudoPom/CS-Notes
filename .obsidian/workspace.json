@@ -4,16 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "0e3746c9434c6d53",
+        "id": "eaa38cab204e111e",
         "type": "tabs",
         "children": [
           {
-            "id": "798dae78f6ab47aa",
+            "id": "13ddb9affb6caa3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a2c696f6a19fc6dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "3d75a7a4787830cf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "02a4854d73300468",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf"
+                "file": "Year-3/Functional-Programming-COMP0020/Simon L. Peyton Jones - The Implementation of Functional Programming Languages (Prentice-Hall International Series in Computer Science)-Prentice Hall (1987).pdf"
               }
             }
           }
@@ -47,7 +78,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Year-3/Computer-Systems-COMP0019/Week-6",
+                "query": "tag:#Functional-Programming-COMP0020",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +100,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -93,7 +124,7 @@
                   "linkStrength": 0.3671875,
                   "linkDistance": 250,
                   "scale": 0.5608427158834431,
-                  "close": false
+                  "close": true
                 }
               }
             }
@@ -141,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,17 +217,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "798dae78f6ab47aa",
+  "active": "a2c696f6a19fc6dd",
   "lastOpenFiles": [
+    "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
+    "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
+    "Year-3/Functional-Programming-COMP0020/Simon L. Peyton Jones - The Implementation of Functional Programming Languages (Prentice-Hall International Series in Computer Science)-Prentice Hall (1987).pdf",
+    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+    "Year-3/Year-3.md",
     "Year-3/Functional-Programming-COMP0020/Week-5/Types.md",
+    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
     "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Camera-and-Robot-Calibration.md",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Introduction-To-Robotics-ELEC0129.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Inverse-of-Homogeneous-Matrix.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Inverse-of-Homogeneous-Matrix.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-and-Transformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Spatial-Description-and-Transformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-andTransformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Euler-Parameters.md"
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md"
   ]
 }
