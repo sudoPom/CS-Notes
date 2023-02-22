@@ -4,7 +4,11 @@ There are two types of RAM:
 * Static RAM 
 * Dynamic RAM
 
-DRAM needs to be refreshed periodically since it uses cells that hold charges to store bits.
+DRAM needs to be refreshed periodically since it uses cells that hold charges to store bits. Each cell requires 1 bit to store information
+
+SRAM stores data using a transitor circuit and does not need to be refreshed to hold a state. They do however require 6 transistors to store a bit of information. The circuit used by SRAM can stay in a single state indefinitely based on a HI or LO voltage value. A voltage value between these two values is considered unstable: ^7fb51a
+
+![[Pasted image 20230221223411.png]]
 
 ### Synchronous DRAM
 

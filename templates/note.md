@@ -1,19 +1,12 @@
 ---
 id: <% tp.file.title.split(" ")[0] %>
 created_date: <% tp.file.creation_date('DD/MM/YYYY') %>
-updated_date: <% tp.file.creation_date('DD/MM/YYYY') %>
+updated_date: <% tp.file.last_modified_date('DD/MM/YYYY') %>
 type: note
+links: 
 ---
-
-#  {{title}}
-- **🏷️Tags** :  #<% tp.file.creation_date('MM-YYYY') %> 
-[ ](#anki-card)
-## 📝 Notes
-- 
+* **🏷️Tags** : #<% tp.file.folder(true).split("/")[1] %> 
+# <% tp.file.title %>
 
 
-## Questions/Thoughts
-
-
-## 🔗 Links
-- 
+# Questions / Thoughts

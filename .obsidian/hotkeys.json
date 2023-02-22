@@ -15,5 +15,13 @@
       "key": "Tab"
     }
   ],
-  "workspace:next-tab": []
+  "workspace:next-tab": [],
+  "templater-obsidian:templates/note.md": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "`"
+    }
+  ]
 }

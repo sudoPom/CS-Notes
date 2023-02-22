@@ -18,6 +18,36 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "798dae78f6ab47aa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-6/Memory-Hierarchy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "4a509861111c6c83",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4075240ed483632f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -49,7 +79,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Year-3/Computer-Systems-COMP0019/Week-6",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -190,15 +220,15 @@
   },
   "active": "5725f38b00061529",
   "lastOpenFiles": [
-    "Year-3/Computer-Systems-COMP0019/Computer Systems A Programmers Perspective (3rd).pdf",
+    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-6/Memory-Hierarchy.md",
     "Year-3/Computer-Systems-COMP0019/Week-6/Cache-Memory.md",
+    "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
+    "templates/note.md",
+    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Computer-Architecture-and-Concurrency-COMP0008.md",
+    "Year-2/Year-2.md",
     "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
+    "Year-3/Computer-Systems-COMP0019/Computer Systems A Programmers Perspective (3rd).pdf",
     "Year-3/Functional-Programming-COMP0020/Week-2/Miranda.md",
-    "Year-3/Functional-Programming-COMP0020/Week-5/Types.md",
-    "Year-3/Functional-Programming-COMP0020/Week-6/Untitled.md",
-    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
-    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
-    "Year-3/Computer-Systems-COMP0019/Week-5/Lempel-Ziv-Welch-Compression.md",
-    "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md"
+    "Year-3/Functional-Programming-COMP0020/Week-5/Types.md"
   ]
 }

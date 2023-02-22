@@ -36,7 +36,7 @@ Multiple memory addresses may map to the same piece of memory in the cache. So t
 
 ![[Screenshot_20220502_155146.png]]
 
-So the cache also stores:
+So the cache stores:
 * Data 
 * Tag
 * Valid bit
