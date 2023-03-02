@@ -30,7 +30,7 @@ For a general lambda abstraction `λx.body` we have the rule:
 λx -> body
 ```
 
-`λx` tells that the node is a lambda expression with formal parameter `x`.
+`λx` tells that the node is a lambda expression with formal parameter `x`. 
 
 
 ## The Graph
