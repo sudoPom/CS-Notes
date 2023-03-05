@@ -130,9 +130,9 @@ Segregated free lists maintain a collection of implicit free lists, where each l
 
 With simple segregated storage blocks in a given free list are all the maximum value in the free lists class size. For example if some size class is defined as {17–32}, then the free list for that class consists entirely of blocks of size 32.
 
-Allocation is done in the first available free block within the appropriate size class. Blocks are never plit to satisfy requests. If the list is empty, a new chunk of memory is requested and split into blocks of the appropriate size to form a new free list. An allocated block that is freed is just put at the front of the free list.
+Allocation is done in the first available free block within the appropriate size class. Blocks are never split to satisfy requests. If the list is empty, a new chunk of memory is requested and split into blocks of the appropriate size to form a new free list. An allocated block that is freed is just put at the front of the free list.
 
-Allocation and Freeing are both constant time operations with this method. Due to each block being the same size, as well as no splitting/coalescing there is not a lot of per block memory overhead - boundary tags and free flags do not need to be stored. Each chunk in any given free list has the same size, meaning the address of the block can be inferred. The only think that needs to be stored is the next element in the free list meaning that the minimum word size can be 1 word.
+Allocation and Freeing are both constant time operations with this method. Due to each block being the same size, as well as no splitting/coalescing there is not a lot of per block memory overhead - boundary tags and free flags do not need to be stored. Each chunk in any given free list has the same size, meaning the address of the block can be inferred. The only thing that needs to be stored is the next element in the free list meaning that the minimum word size can be 1 word.
 
 The main downside is the amount of internal and external fragmentation caused due to the lack of coalescing and splitting.
 

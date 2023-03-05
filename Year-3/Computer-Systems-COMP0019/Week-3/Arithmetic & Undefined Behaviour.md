@@ -47,4 +47,11 @@ int check_signed_increment(int c){
 
 Generally it is best to check if behaviour is undefined without carrying out the actual undefined behaviour.
 
-C operates under the assumption that the programmer will not cause undefined behaviour and will optimize out if statements where
+```c
+int check_signed_increment(int c){
+	assert(x != INT_MAX); // This could be dropped when x = INT_MAX
+	return x+1;
+}
+```
+
+C operates under the assumption that the programmer will not cause undefined behaviour and will optimize out if statements which are only true if undefined behaviour is carried out.

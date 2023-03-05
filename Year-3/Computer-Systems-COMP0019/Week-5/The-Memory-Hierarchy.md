@@ -23,7 +23,7 @@ Double Data Rate Synchronous DRAM (DDR SDRAM) uses both rising and falling edges
 
 ##### Nonvolatile Memories
 
-Both DRAM and SRAM are non volatile memories meaning they lose information when powered off.
+Both DRAM and SRAM are volatile memories meaning they lose information when powered off.
 
 Some nonvolatile memories include:
 * Read-only memory (ROM) - programmed during production

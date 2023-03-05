@@ -42,7 +42,7 @@ test val1 val2
 
 This computes `val1 && val2`.
 
-These instructions will set the flags depending on the result.
+These instructions will set [[Program-Control#Control Codes|control codes]] depending on the result.
 
 ### Jumping
 
@@ -108,7 +108,7 @@ Conditional moves are bad in some cases:
 * "Risky" operations like dereferencing a null pointer which is not allowed.
 * Computations with side effects - where calculations alter other parts memory.
 
-### Do Whille Loops
+### Do While Loops
 
 In C a do while loop performs an operation whilst a condition is true. The operation is always done at least once.
 
@@ -279,7 +279,7 @@ switch2:
 						  // Statement
 ```
 
-A jump table is just an array of addresses:
+A jump table is just an array of addresses in assembly:
 
 ```
 .L4:

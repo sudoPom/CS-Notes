@@ -4,22 +4,11 @@
     "type": "split",
     "children": [
       {
-<<<<<<< HEAD
-        "id": "70ec446759fa2a2e",
-=======
-<<<<<<< HEAD
-        "id": "c1c239dbfc619c09",
+        "id": "a1a468ab82aee1a4",
         "type": "tabs",
         "children": [
           {
-            "id": "13bf2813de2cc3a9",
-=======
-        "id": "16a0bf304af6e143",
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
-        "type": "tabs",
-        "children": [
-          {
-            "id": "85957bc8b1d35d59",
+            "id": "28e909735bb63489",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,37 +16,6 @@
                 "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "a64e45edbda302dd",
-        "type": "tabs",
-        "children": [
-          {
-<<<<<<< HEAD
-            "id": "258e3cad3e9f7a19",
-=======
-            "id": "0185ad722cdd82a1",
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-<<<<<<< HEAD
-                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 20.pdf"
-=======
-<<<<<<< HEAD
-                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
-                "mode": "source",
-                "source": false
-=======
-                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 19.pdf"
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
               }
             }
           }
@@ -91,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Functional-Programming-COMP0020",
+                "query": "XYZ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -113,15 +71,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-<<<<<<< HEAD
                 "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
-=======
-<<<<<<< HEAD
-                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
-=======
-                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -139,12 +89,12 @@
                   "textFadeMultiplier": 0,
                   "nodeSizeMultiplier": 1,
                   "lineSizeMultiplier": 1,
-                  "collapse-forces": false,
-                  "centerStrength": 0.6484375,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
-                  "linkStrength": 0.3671875,
+                  "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5608427158834431,
+                  "scale": 0.6159021274350096,
                   "close": true
                 }
               }
@@ -154,7 +104,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.49999618530273
+    "width": 290.5
   },
   "right": {
     "id": "58493915ba98c30b",
@@ -193,15 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
                 "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
-=======
-<<<<<<< HEAD
-                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
-=======
-                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -227,6 +169,24 @@
             }
           }
         ]
+      },
+      {
+        "id": "3ae31dfba0859efd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ebf3d523c845319",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Year-3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "horizontal",
@@ -235,6 +195,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "templater-obsidian:Templater": false,
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": false,
@@ -242,88 +203,29 @@
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "markdown-importer:Open format converter": false
     }
   },
-<<<<<<< HEAD
-  "active": "85957bc8b1d35d59",
-=======
-<<<<<<< HEAD
-  "active": "13bf2813de2cc3a9",
+  "active": "28e909735bb63489",
   "lastOpenFiles": [
-    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
-=======
-  "active": "0387b6512a650742",
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
-  "lastOpenFiles": [
-    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
-    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
-    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
-    "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
-    "Year-3/Functional-Programming-COMP0020/Week-7/Graph-Reduction.md",
-    "images/Pasted image 20230303125009.png",
-    "images/Pasted image 20230303124714.png",
-    "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
-    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
-    "Year-3/Functional-Programming-COMP0020/Week-1/Introduction to Functional Programming.md",
-    "Year-3/Functional-Programming-COMP0020/Week-4/Higher-Order-Functions-on-Lists.md",
-    "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
-    "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
-    "Year-3/Functional-Programming-COMP0020/Week-3/Designing-Simple-Programs.md",
-    "Year-3/Functional-Programming-COMP0020/Week-2/Miranda.md",
-    "Year-3/Functional-Programming-COMP0020/Week-2/Functions.md",
-    "images/Pasted image 20230303123406.png",
-    "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 20.pdf",
-    "Year-3/Computer-Systems-COMP0019/Week-7/Processes-and-Exceptional-Control-Flow.md",
-    "Year-3/Functional-Programming-COMP0020/Simon L. Peyton Jones - The Implementation of Functional Programming Languages (Prentice-Hall International Series in Computer Science)-Prentice Hall (1987).pdf",
-    "images/Pasted image 20230302143218.png",
-    "images/Pasted image 20230302141955.png",
-    "images/Pasted image 20230302141452.png",
-    "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 19.pdf",
-    "Year-3/Functional-Programming-COMP0020/Week-7",
-    "Year-3/Computer-Systems-COMP0019/Week-6/Processes-and-Virtual-Memory.md",
-    "Year-3/Research-Methods-COMP0030/Research-Methods-COMP0030.md",
-    "Year-2/Security-COMP0141/Week-7/Who-you-Are.md",
-    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-6/Memory-Hierarchy.md",
     "Year-3/Computer-Systems-COMP0019/Week-6/Cache-Memory.md",
-    "Year-3/Computer-Systems-COMP0019/Computer Systems A Programmers Perspective (3rd).pdf",
     "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/HOW-TO-POINTER.md",
-    "Year-3/Computer-Systems-COMP0019/Week-7/Virtual-Memory-Implementation.md",
-    "images/Pasted image 20230228131439.png",
-    "images/Pasted image 20230228131239.png",
-    "images/Pasted image 20230228130112.png",
-    "images/Pasted image 20230228130046.png",
     "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
-    "Year-3/Computer-Systems-COMP0019/Week-7/Untitle.md",
-<<<<<<< HEAD
-    "Year-3/Computer-Systems-COMP0019/Week-7"
-=======
-    "Year-3/Computer-Systems-COMP0019/Week-7",
-    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-7/Thread-Level-Parallelism.md",
-    "Cache-Memory^noalloc.md",
-    "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Hetrogenous-Data-Structures-in-C.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
+    "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
+    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
     "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
-    "Year-3/Functional-Programming-COMP0020/Simon L. Peyton Jones - The Implementation of Functional Programming Languages (Prentice-Hall International Series in Computer Science)-Prentice Hall (1987).pdf",
-    "Year-3/Year-3.md",
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
-    "Year-3/Functional-Programming-COMP0020/Week-5/Types.md",
+    "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
     "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Camera-and-Robot-Calibration.md",
-<<<<<<< HEAD
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Introduction-To-Robotics-ELEC0129.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Inverse-of-Homogeneous-Matrix.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Inverse-of-Homogeneous-Matrix.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-and-Transformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Spatial-Description-and-Transformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-andTransformation.md"
-=======
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md"
->>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
->>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
+    "Year-3/Functional-Programming-COMP0020/Drawing 2023-01-29 23.55.13.excalidraw.md",
+    "Excalidraw/Drawing 2023-01-29 23.53.18.excalidraw.md",
+    "Year-3/Year-3.md",
+    "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
+    "Year-3/Computer-Graphics-COMP0027/Week-2/Local-Illumination.md",
+    "Year-3/Computer-Graphics-COMP0027/Computer-Graphics-COMP0027.md",
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-1/Image-Processing.md"
   ]
 }
