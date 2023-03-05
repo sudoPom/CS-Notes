@@ -4,7 +4,18 @@
     "type": "split",
     "children": [
       {
+<<<<<<< HEAD
         "id": "70ec446759fa2a2e",
+=======
+<<<<<<< HEAD
+        "id": "c1c239dbfc619c09",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13bf2813de2cc3a9",
+=======
+        "id": "16a0bf304af6e143",
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
         "type": "tabs",
         "children": [
           {
@@ -26,12 +37,27 @@
         "type": "tabs",
         "children": [
           {
+<<<<<<< HEAD
             "id": "258e3cad3e9f7a19",
+=======
+            "id": "0185ad722cdd82a1",
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 20.pdf"
+=======
+<<<<<<< HEAD
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
+                "mode": "source",
+                "source": false
+=======
+                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Lecture 19.pdf"
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
               }
             }
           }
@@ -87,7 +113,15 @@
             "state": {
               "type": "localgraph",
               "state": {
+<<<<<<< HEAD
                 "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+=======
+<<<<<<< HEAD
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
+=======
+                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -159,7 +193,15 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+=======
+<<<<<<< HEAD
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
+=======
+                "file": "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -204,7 +246,16 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
+<<<<<<< HEAD
   "active": "85957bc8b1d35d59",
+=======
+<<<<<<< HEAD
+  "active": "13bf2813de2cc3a9",
+  "lastOpenFiles": [
+    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+=======
+  "active": "0387b6512a650742",
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
   "lastOpenFiles": [
     "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
     "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
@@ -248,6 +299,31 @@
     "images/Pasted image 20230228130046.png",
     "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
     "Year-3/Computer-Systems-COMP0019/Week-7/Untitle.md",
+<<<<<<< HEAD
     "Year-3/Computer-Systems-COMP0019/Week-7"
+=======
+    "Year-3/Computer-Systems-COMP0019/Week-7",
+    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-7/Thread-Level-Parallelism.md",
+    "Cache-Memory^noalloc.md",
+    "Year-3/Functional-Programming-COMP0020/Week-6/Program-Representation.md",
+    "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
+    "Year-3/Functional-Programming-COMP0020/Simon L. Peyton Jones - The Implementation of Functional Programming Languages (Prentice-Hall International Series in Computer Science)-Prentice Hall (1987).pdf",
+    "Year-3/Year-3.md",
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+    "Year-3/Functional-Programming-COMP0020/Week-5/Types.md",
+    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Camera-and-Robot-Calibration.md",
+<<<<<<< HEAD
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Introduction-To-Robotics-ELEC0129.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Inverse-of-Homogeneous-Matrix.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Inverse-of-Homogeneous-Matrix.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-and-Transformation.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Spatial-Description-and-Transformation.md",
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-andTransformation.md"
+=======
+    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md"
+>>>>>>> 475eafe50ff6dc73b6892b1fb10d814de021d4f0
+>>>>>>> b549508ade0a94474a440c7c585e71b26fbc73c9
   ]
 }
