@@ -4,16 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "0e3746c9434c6d53",
+        "id": "c1c239dbfc619c09",
         "type": "tabs",
         "children": [
           {
-            "id": "798dae78f6ab47aa",
+            "id": "13bf2813de2cc3a9",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf"
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -69,7 +71,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -141,7 +143,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
+                "file": "Year-3/Functional-Programming-COMP0020/Week-4/Combinators-and-Higher-Order-Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,8 +188,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "798dae78f6ab47aa",
+  "active": "13bf2813de2cc3a9",
   "lastOpenFiles": [
+    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
     "Year-3/Functional-Programming-COMP0020/Week-5/Types.md",
     "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-2/Camera-and-Robot-Calibration.md",
     "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
@@ -196,7 +199,6 @@
     "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Inverse-of-Homogeneous-Matrix.md",
     "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-and-Transformation.md",
     "Year-2/Introduction-To-Robotics-ELEC0129/Week-2/Spatial-Description-and-Transformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-andTransformation.md",
-    "Year-2/Introduction-To-Robotics-ELEC0129/Week-3/Euler-Parameters.md"
+    "Year-2/Introduction-To-Robotics-ELEC0129/Week-1/Spatial-Description-andTransformation.md"
   ]
 }
