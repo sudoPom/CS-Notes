@@ -11,7 +11,7 @@ links:
 * **🏷️Tags** : #Computer-Systems-COMP0019 
 # Cache-Memory
 
-Cache memory is a type of [[The-Memory-Hierarchy#^7fb51a|SRAM]] which lies between the main memory and the CPU registers. This allows them to be accessed almost as quickly as registers (in about 4 clock cycles). 
+Cache memory is a type of [[The-Memory-Hierarchy#^7fb51a|SRAM]] which lies between the main memory and the CPU registers. This allows them to be accessed almost as quickly as registers (in about 4 clock cycles).  ^4b7de3
 
 There are multiple tiers of cache:
 * L1: Small but accessable in 4 clock cycles
@@ -106,6 +106,7 @@ A fully associate cache is of the form $(S, E, B, m)$ where $E = C/B$. This esse
 
 Fully associative caches are only appropriate for smaller caches like translational lookup buffers.
 
+---
 ## Writing 
 
 A write hit occurs when an address that is being written to is already stored in cache. There are two main methods of updating the memory to reflect a write change. ^write
@@ -119,7 +120,26 @@ A write miss occurs when an address being written to is not stored in cache. The
 
 Caches that are write through caches are normally write no allocate and write back caches are normally write allocate.
 
+---
+
+#### Modern CPU Cache Architecture
+
+For a multicore system, each core tends to have its own L1 and L2 cache. There are two types of L1 cache (one for storing data and the other for instructions). 
+All cores also have access to a shared L3 Cache.
+
+#### Performance Metrics
+
+To determine how well a cache system performs you can measure:
+* Miss rate: the fraction of memory references not found in cache.
+* Hit time: the time to deliver a line in the cache to the processor (in clock cycles).
+* Miss penalty: additional time required because of a miss (also in clock cycles).
+
+Since misses are really expensive the miss rate is typically used.
+
+
 # Questions / Thoughts
 
 * During data retrieval the valid bit is set for multiple blocks of data. What if a data block doesn't contain meaningful data but is still retrieved because another block in the same line does?
 	* When an address is read, the WHOLE block is stored in memory, meaning that if another block has been read and the tag bits are still the same, the block that had been read previously will in fact be in the cache, just at a different offset.
+
+^5a8caf
