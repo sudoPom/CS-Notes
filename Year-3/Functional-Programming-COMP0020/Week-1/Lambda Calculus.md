@@ -69,6 +69,34 @@ A λ term that can be reduced is called a rede - "reducable expression". Repeate
 	* A variable `x` is in normal form.
 	* `M N` is in normal form if `N` is in normal form and `M` is not an abstraction. 
 
+##### Head Normal Form
+
+A term $M$ is in head normal form if it is of the form:
+
+$$
+\begin{align}
+\lambda x_1 ... x_n ~ . ~ (x~N_1...N_m)
+\end{align}
+$$
+Where $n,m \geq 0$ and $x$ is a variable (head variable).
+
+##### Weak Head Normal Form
+
+A term $M$ is in weak head normal form if it is of the form:
+$$
+\begin{align}
+\lambda x_1 ... x_n ~ . ~ (x~N_1...N_m)
+\end{align}
+$$
+or
+$$
+\begin{align}
+\lambda x ~ . N
+\end{align}
+$$
+Neither head nor weak head normal form are unique. 
+
+
 ###### Church-Rosser Theorem
 All reduction orders lead to the same unique normal form if they terminate.
 

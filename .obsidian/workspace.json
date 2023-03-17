@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "a1a468ab82aee1a4",
+        "id": "068508eeb38c8ecc",
         "type": "tabs",
         "children": [
           {
-            "id": "28e909735bb63489",
+            "id": "6265b24307a790f0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+                "file": "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "560c60a0558a7ee3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -71,7 +84,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+                "file": "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -143,7 +156,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
+                "file": "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,26 +219,47 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "28e909735bb63489",
+  "active": "560c60a0558a7ee3",
   "lastOpenFiles": [
+    "Year-3/Computer-Systems-COMP0019/Week-8/Shells.md",
+    "Year-3/Computer-Systems-COMP0019/Computer-Systems-COMP0019.md",
+    "Year-3/Functional-Programming-COMP0020/Week-9/Copying-Garbage-Collection.md",
+    "Year-3/Functional-Programming-COMP0020/Week-9/Lecture 25.pdf",
+    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
+    "Year-3/Computer-Systems-COMP0019/Week-9/I_O.md",
+    "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
+    "Year-3/Functional-Programming-COMP0020/Week-8/Memory-Management.md",
+    "Year-3/Functional-Programming-COMP0020/Week-9/Lecture 24.pdf",
+    "Year-3/Functional-Programming-COMP0020/Week-8/Lecture 23.pdf",
+    "Year-3/Functional-Programming-COMP0020/Week-9/Mark-Scan-Garbage-Collection.md",
+    "Year-3/Computer-Systems-COMP0019/Week-9",
+    "Year-3/Functional-Programming-COMP0020/Week-7/Graph-Reduction.md",
+    "Year-3/Functional-Programming-COMP0020/Week-7/Introduction-to-Implementation.md",
+    "Year-3/Functional-Programming-COMP0020/Week-8/Memory-Allocation-Methods.md",
+    "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
+    "Year-3/Functional-Programming-COMP0020/Week-8/Lecture 21.pdf",
+    "Year-3/Functional-Programming-COMP0020/Week-8/Lecture 22.pdf",
+    "Year-3/Functional-Programming-COMP0020/Week-9/Lecture 26.pdf",
+    "Year-3/Functional-Programming-COMP0020/Week-9",
+    "Year-3/Computer-Systems-COMP0019/Week-7/Processes-and-Exceptional-Control-Flow.md",
+    "Year-3/Computer-Systems-COMP0019/Computer Systems A Programmers Perspective (3rd).pdf",
+    "Year-3/Computer-Systems-COMP0019/Week-8",
+    "images/Pasted image 20230309103143.png",
+    "images/Pasted image 20230309103119.png",
+    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
+    "images/Pasted image 20230306134218.png",
+    "images/Pasted image 20230306133807.png",
+    "images/Pasted image 20230306131322.png",
+    "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
+    "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
     "Year-3/Computer-Systems-COMP0019/Week-6/Cache-Memory.md",
     "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
-    "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
     "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
     "Year-3/Computer-Systems-COMP0019/Week-3/Hetrogenous-Data-Structures-in-C.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
-    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
     "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
-    "Year-3/Functional-Programming-COMP0020/Functional-Programming-COMP0020.md",
-    "Year-3/Functional-Programming-COMP0020/Week-1/Lambda Calculus.md",
     "Year-3/Functional-Programming-COMP0020/Week-3/Recursion-and-the-Lambda-Calculus.md",
-    "Year-3/Functional-Programming-COMP0020/Programming With Miranda 1995 (2022).pdf",
     "Year-3/Functional-Programming-COMP0020/Drawing 2023-01-29 23.55.13.excalidraw.md",
     "Excalidraw/Drawing 2023-01-29 23.53.18.excalidraw.md",
-    "Year-3/Year-3.md",
-    "Year-3/Computer-Graphics-COMP0027/Week-2/Recursive-Ray-Tracing.md",
-    "Year-3/Computer-Graphics-COMP0027/Week-2/Local-Illumination.md",
-    "Year-3/Computer-Graphics-COMP0027/Computer-Graphics-COMP0027.md",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Week-1/Image-Processing.md"
+    "Year-3/Year-3.md"
   ]
 }

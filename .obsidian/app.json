@@ -10,5 +10,6 @@
     "downscalePercent": 100
   },
   "alwaysUpdateLinks": true,
-  "communityThemeSortOrder": "download"
+  "communityThemeSortOrder": "download",
+  "vimMode": true
 }
