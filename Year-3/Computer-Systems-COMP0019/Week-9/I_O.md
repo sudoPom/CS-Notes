@@ -60,6 +60,31 @@ File Descriptors are held in the *descriptor table* in the kernel. An entry in t
 
 Opening the same file twice will allow you to access the same file with different file descriptors which allows two different positions of the file to be accessed at the same time.
 
-When a child is created using `fork` the child has the exact same file descriptors, with each file having the exact same files being open, as its parent.
+When a child is created using `fork` the child has the exact same file descriptors, with each file having the exact same files being open, as its parent. That is to say that both the parent and child refer to the same file descriptors.
+
+## Standard I/O
+
+The standard I/O functions are all prefixed with an `f`. For example `fread()`.
+
+These functions take in a stream of input rather than a file descriptor. A *stream* is am anstraction for a file descriptor and a buffer in memory. All programs begin life with:
+* `stdin`
+* `stdout`
+* `stderr`
+
+```c
+extern FILE *stdin; // standard input (descriptor 0)
+extern FILE *stdout; // standard output (descriptor 1)
+extern FILE *stderr; // standard error (descriptor 2)
+```
+
+Since using the unix I/O calls repeatedly would be expensive, a stream holds a buffer and reads from there instead, byte by byte.
+
+The `fflush()` function clears the buffer of the input stream:
+
+```c
+fflush(FILE *stream);
+```
+`exit()` also flushes all standard buffers.
+
 
 # Questions / Thoughts

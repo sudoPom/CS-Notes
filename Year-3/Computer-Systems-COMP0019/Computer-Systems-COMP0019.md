@@ -1,5 +1,11 @@
 # Computer-Systems-COMP0019 Overview
- 
+
+
+"The Unix Bible":
+Advanced Programming in the UNIX Environment
+
+"The Linux Bible":
+The Linux Programming Environment
 ```ccard
 type: folder_brief_live
 ```
