@@ -1,6 +1,6 @@
 A **universal program** treats other programs as meaningful inputs and runs them. For example operating systems takes in executables as programs and files as input (Microsoft Word and .doc files) and allows us to execute the program and see a result. A universal machine is **programmable** to be able to solve any algorithmical task.
 
-A universal turing machine takes a strin $y$ as input. It first checks whether $y$ is the encoding of a turing machine $M$ and of a string $x$ in the alphabet $\Sigma_|$ of $M$. If this is the case, the UTM simulates the action of $M$ on $x$.
+A universal turing machine takes a string $y$ as input. It first checks whether $y$ is the encoding of a turing machine $M$ and of a string $x$ in the alphabet $\Sigma_|$ of $M$. If this is the case, the UTM simulates the action of $M$ on $x$.
 
 ![[Pasted image 20221018122728.png]]
 
@@ -35,7 +35,21 @@ code(\delta) = 10101101110010110101110
 \end{align}
 $$
 
+The inputs of the turing machine $M$ should be in the form:
+
+$$
+\begin{align}
+code(input) = code(\sigma_1\sigma_2...\sigma_n) = 00code(\sigma_1)code(\sigma_2)...code(\sigma_n)
+\end{align}
+$$
+
 Different machines can have different encodings but will still be able to do the same job. Additionally the encoding is 1-1, meaning that two different machines are encoded to different strings. Furthermore it is possible to **decide** if a given string is an encoding of a turing machine.
+
+$$
+\begin{align}
+code(input) = code(\sigma_1\sigma_2...\sigma_n) = 00code(\sigma_1)code(\sigma_2)...code(\sigma_n)
+\end{align}
+$$
 
 ### Defining a UTM using a TM
 

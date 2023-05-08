@@ -21,7 +21,7 @@ $$
 #### Encoding
 An encoding scheme takes in the data, $\alpha$, of a decision problem and converts it into a string $code(\alpha)$ that is within an alphabet.
 
-The language encoding the decision problem will be:
+The language, $L$, encoding the decision problem will be:
 
 $$
 \begin{align}
@@ -30,7 +30,7 @@ L = \{x\in\Sigma^* | x = code(\alpha)\}
 $$
 Where $\alpha$ is some form of data and $\alpha$ is a yes instance of the problem.
 * If $\alpha \neq \beta$ then $code(\alpha) \neq code(\beta)$
-* We should be able to check if $x\in \Sigma^2$ is $code(\alpha)$ for some $\alpha$
+* We should be able to check if $x\in \Sigma^*$ is $code(\alpha)$ for some $\alpha$.
 * We should be able to retrieve $\alpha$ from $code(\alpha)$
 
 ### Turing Machines and Decision Problems
@@ -42,20 +42,22 @@ For a turing machine to solve a decision problem we need:
 * For a given input $x\in\Sigma_|^*$ the turing machine $M$ halts in state $Y$ if it accept $x$ and halts in state $N$ if it rejects $x$.
 
 #### Decidability
-Additionally $M$ `decides` $L$ if:
+$M$ `decides` $L$ if:
 * When $x \in L$ then $M$ accepts $x$
 * When $x \notin L$ then $M$ rejects $x$
-A language (decision problem) is decidable if there is a Turing Machine that decides it. 
+A language (decision problem) is decidable if there is a Turing Machine that decides it. It will never loop on any input.
 
 Decidable can also be said to be `Recursive` or `Computable`.
 
 #### Recognisability
 A turing machine $M$ `recognises` $L$ if
-* When $x\in L$ hen $M$ halts
-* When $x\notin L$ then $M$ failts to halt
+* When $x\in L$ then $M$ halts. It doesn't matter what state it halts in.
+* When $x\notin L$ then $M$ failts to halt.
 A Language (decision problem) is recognisable if there is a Turing machine that recognises it.
 
 Recognisable can also be said to be `Recursively Enumerable` or `Computably Enumerable`.
+
+All decidable languages are recognisable.
 
 ### Chomsky Hierarchy 
 

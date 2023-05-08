@@ -31,7 +31,7 @@ type: folder_brief_live
 [[P=NP]]
 
 ## Week 8
-[[K-Sat]]
+[[Graph-Reductions]]
 
 ## Week 9
 [[Log-Space]]

@@ -1,4 +1,5 @@
 # The Church Turing Thesis
+
 The **church turing thesis** is the claim that turing machines are all we need in order to express an algorithmic solution to a problem. There is no proof for this as it is a conjecture, but there is a large amount of evidence supporting it. This essentially means that **turing machines can compute the same class of functions** (albeit less efficiently) as:
 * Classic computers
 * Register machines
@@ -25,8 +26,7 @@ All these changes make computation more simple and design more convenient but ar
 #### Multi-tape Turing machine
 Input begins with the input on tape 1, and all other tapes blank. At each step, all heads are in the same state but read symbols on different tapes, and may perform different actions depending on the symbols read. If a halting state is reached then the output is read from the first step.
 
-Formally this model is defined similarly to standard turing machines.
-![[Turing-Machines#^184f03]]
+Formally this model is defined similarly to standard [[Turing-Machines#^184f03|turing machines]]:
 
 The transition function is defined as:
 $$
@@ -34,7 +34,9 @@ $$
 \delta: (Q/H)\times\Sigma^k\to Q \times(\Sigma\lor\set{\rightarrow,\leftarrow})^k
 \end{align}
 $$
-To prove that this type of turing machine $M$ is equivalent to regular turing machines $M^\prime$ we need to show that we can construct a single tape turing machine such that given the same input $x$. $M$ halts on $x$ if and only if $M^\prime$ halts.
+That is to say that the transition can move/edit multiple tape heads at the same time.
+
+To prove that this type of turing machine $M$ is equivalent to regular turing machines $M^\prime$ we need to show that we can construct a single tape turing machine such that given the same input $x$. $M$ halts on $x$ if and only if $M^\prime$ halts. We also need to prove the reverse (that a multi tape turing machine can simulate a single tape one) but that is relatively trivial since a single tape turing machine *is* a multi tape turing machine.
 
 ##### Proof
 
@@ -54,7 +56,7 @@ Becomes
 
 ![[Pasted image 20221011124148.png]]
 
-Proofs of this form are not typically very precise. However nobody has the time to define $M^\prime$ in full, so it is good enough to define the main change needed to be made to $M^\prime$. 
+Proofs of this form are not typically very precise. However nobody has the time to define $M^\prime$ in full, so it is good enough to define the main change needed to be made to $M^\prime$ and maybe the transition from one state of the tape to another.
 
 #### Two-way infinite tape Turing machines
 These turing machines have the same definition as a standard TM, but works  
@@ -65,7 +67,7 @@ on a tape that is also unbounded on the left.
 The definition of this turing machine is exactly the same as regular turing machine but does not have the restriction of moving right on the start symbol.
 
 ##### Proof
-This can be proved by using the [[The-Church-Turing-Thesis#^caaa80|previous proof]] - creating a mult-tape turing machine from a standard turing machine.
+This can be proved by using the [[The-Church-Turing-Thesis#^caaa80|previous proof]] - creating a multi-tape turing machine from a standard turing machine.
 
 #### Non-deterministic Turing Machine
 These have the same definition as a standard turing machine but the transition function becomes a **transition relation**:
@@ -75,11 +77,14 @@ $$
 \delta: ((Q/H) \times \Sigma) \times (Q\times(\Sigma\lor\set{\rightarrow,\leftarrow}))
 \end{align}
 $$
-At each step, there are multiple actions you can take - thus formin a tree of sequences, rather than a sequence.
+At each step, there are multiple actions you can take - thus forming a tree of sequences, rather than a single sequence.
+
+If a single branch in the tree halts on an accepting state we accept.
 
 ![[Pasted image 20221011130002.png]]
 
 ##### Proof
-The idea behind the equivalence between $M^\prime$ and $M$ is that we perform a breadth first search on the computation tree and if one path accepts then we accept. A breadth first search is required as it is not vulnerable to looping paths.
+
+The idea behind the equivalence between $M^\prime$ and $M$ is that $M^`$ performs a breadth first search on the computation tree and if one path accepts then we accept. A breadth first search is required as it is not vulnerable to looping paths.
 
 This can be done using three tapes, an input state, a simulation tape, which is used to explore a branch and an index tape which keeps track of which branch we are on.

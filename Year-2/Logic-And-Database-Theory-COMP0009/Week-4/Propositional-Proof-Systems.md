@@ -21,8 +21,8 @@ Start off with some axioms, an `axiom` is a rule that is known to be valid, and 
 * $((p\to (q \to r))\to(p \to q) \to (p \to r))$ II
 * $((\neg p \to \neg q)\to (q \to p))$ III
 * $(p \iff \neg\neg p)$  IV
-* $((p\or q) \iff (\neg p \to q))$ V
-* $((p\and q) \iff \neg(p \to \neg q))$ VI
+* $((p\lor q) \iff (\neg p \to q))$ V
+* $((p\land q) \iff \neg(p \to \neg q))$ VI
 
 `Modus Ponens`: If $\phi$ is valid and $\phi \to \psi$ is valid then you can conclude that $\psi$ is valid.
 

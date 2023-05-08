@@ -10,7 +10,7 @@ URMs also compute functions of the form $N^k\to N$. The input $x\in N^k$ is spli
 
 A computation follows the sequence of instructions specified by a program $P$. These programs look similar to assembly code. There are four types of instruction:
 * **Zero**: $Z(n)$ sets $r_n$ to be equal to zero
-* **Successor:** $S(n)$ adds one to the content of $R_n$
+* **Successor:** $S(n)$ adds one to the content of $r_n$
 * **Move**: $M(n,m)$ sets the content of $r_m$ to be equal to the content of $r_n$.
 * **Jump** $J(n,m,p)$ forces the program to go to instruction $I_p$ if $r_n$s contents is equal to $r_m$s contents.
 
@@ -31,6 +31,7 @@ When a register is to be updated, we use the additional three tapes to update th
 ![[Pasted image 20221014172758.png]]
 
 #### Turing Machine Equivalence with URMs
+
 For a Turing Machine $M = <\Sigma, Q, q_0, H, \delta>$ we need to be able to encode the behaviour of the turing machine using natural numbers.
 
 We can have a TAPE register that encodes the current configuration of the tape of  $M$. The tape will consist of $m$ symbols, so we will therefore need to encode each of these symbols. 
@@ -58,7 +59,7 @@ Encodes
 
 The power the base is raised to indicates the tape position and the number it is multiplied with represents the symbol. 
 
-Registers will also be needed to encode the transition function of $M$. Each register needs to encode a tuple holding the input state, input symbol, output symbold and action:
+Registers will also be needed to encode the transition function of $M$. Each register needs to encode a tuple holding the input state, input symbol, output symbols and action:
 $$
 \begin{align}
 (q_{in}, \sigma_{in}, q_{out}, \sigma_{out})
@@ -102,8 +103,8 @@ A formal defintion is as follows:
 PROG ::= begin end | begin SEQCMD end
 SEQCMD ::= CMD | SEQCMD ; CMD
 CMD ::= ASS | while TEST do CMD | PROG
-ASS ::= VAR := 0 | VAR := s(VAR) | VAR := P(VAR)
-TEST ::= VAT != VAR
+ASS ::= VAR := 0 | VAR := s(VAR) | VAR := p(VAR)
+TEST ::= VAR != VAR
 VAR ::= CHAR | VAR CHAR | VAR DIGIT
 CHAR ::= A|B|...|Z
 DIGIT::= 0|1|...|9

@@ -9,7 +9,7 @@ The "pure type free" lambda calculus has only three constructs:
 ```
 exp => ident : Variables
 (λident . expression) OR (λident expression) : Functions
-(exp_1, exp_2) : Application
+(exp_1 exp_2) : Application
 ```
 
 Under the following alphabet:
@@ -25,15 +25,15 @@ The outer parenthesis are normally ommited and non outer `λ`s are also ommited 
 
 A variable is a way to abstract away an expression
 
-A function identifies a variable `ident` as an abstraction for it to be used in the function body - the `exp`. Functions can be nested. Functions are higher order functions meaning they can accept other functions as arguments and areturn functions. Functions do not have names but their arguments can. The only acception to this is when a function is passed into another function as an argument, in which case it becomes bound to the name of the argument.
+A function identifies a variable `ident` as an abstraction for it to be used in the function body - the `exp`. Functions can be nested. Functions are higher order functions meaning they can accept other functions as arguments and return functions. Functions do not have names but their arguments can. The only exception to this is when a function is passed into another function as an argument, in which case it becomes bound to the name of the argument.
 
-Application applies the function expression ($exp_1$) to the argument expression through beta reduction. This causes some form of the argument function to replace all occurences of the bound variable in the function expression. Application associates to the left, so $M N P = (M N) P$
+Application applies the function expression ($exp_1$) to the argument expression through beta reduction. This causes some form of the argument function $(exp_2)$ to replace all occurences of the bound variable in the function expression. Application associates to the left, so $M N P = (M N) P$
 
 ### Beta Reduction
 
-`(λf a.f a) (λs.s s) (λx.x)`
+`(λf λa.f a) (λs.s s) (λx.x)`
 
-In the above function expression `(λf a.f a) (λs.s s)` we replace all occurences of `f` with `(λs.s s)` to get the new function:
+In the above function expression `(λf λa.f a) (λs.s s)` we replace all occurences of `f` with `(λs.s s)` to get the new function:
 
 `λa.(λs.s s) a `
 
@@ -64,10 +64,14 @@ Eta reduction removes an argument from a function if its not used.
 
 ### How to Reduce
 
-A λ term that can be reduced is called a rede - "reducable expression". Repeatedly reducing a redex until there are no more $\beta$ redex sub terms in the λ term, then the result is in normal form. Not all terms have normal forms. A reduction strategy is the order of which you reduce a λ term, like always expanding the leftmost redex in the expression. If the λ calculus has been extended with constants, then there must be no more $\beta$ and $\delta$ redex subterms.
-* Normal Form
-	* A variable `x` is in normal form.
-	* `M N` is in normal form if `N` is in normal form and `M` is not an abstraction. 
+A λ term that can be reduced is called a redex - "reducable expression". Repeatedly reducing a redex until there are no more $\beta$ redex sub terms in the λ expression will result in the expression being in *normal form*. Not all terms have normal forms. A reduction strategy is the order of which you reduce a λ term, like always expanding the leftmost redex in the expression. If the λ calculus has been extended with constants, then there must be no more $\beta$ and $\delta$ redex subterms.
+
+##### Normal Form
+A term is in normal form if it cannot be beta reduced.
+
+All variables `x` are in normal form.
+
+`M N` is in normal form if `N` is in normal form and `M` is not an abstraction. 
 
 ##### Head Normal Form
 
@@ -94,7 +98,7 @@ $$
 \lambda x ~ . N
 \end{align}
 $$
-Neither head nor weak head normal form are unique. 
+Neither head nor weak head normal form is unique. 
 
 
 ###### Church-Rosser Theorem
@@ -127,6 +131,27 @@ In the basic λK calculus there are no constants, so we need to encode numbers u
 etc...
 ```
 
+Addition can be encoded as such:
+
+```
++       = λm.λn.λf.λx.(m f (n f x))
+1 + 1   = λm.λn.λf.λx.(m f (n f x)) 1 1 
+		= λm.λn.λf.λx.(m f (n f x)) (λf.(λx.(f x))) (λf.(λx.(f x)))
+		= λn.λf.λx.((λf.(λx.(f x))) f (n f x)) (λf.(λx.(f x)))
+		= λf.λx.((λf.(λx.(f x))) f ((λf.(λx.(f x))) f x))
+		------------------------------------------------
+		= λf.λx.((λf.(λx.(f x))) f ((λf.(λx.(f x))) f x)) g y (Will apply g on y twice)
+		= λx.((λf.(λx.(f x))) g ((λf.(λx.(f x))) g x))
+		= λx.((λx.(g x)) ((λf.(λx.(f x))) g x))
+		= ((λx.(g x)) ((λf.(λx.(f x))) g y))
+		= g ((λf.(λx.(f x))) g y)
+		= g (λx.(g x)) y
+		= g (g y)
+		= g (g y)
+		= 2
+		
+```
+
 ### Free Variable Capture
 
-Free variable capture causes problems when an argument is equal to a variable name defined in the λ term. Free variable capture can be avoided by using [[Lambda Calculus#Alpha Reduction|alpha reduction]] to change the name of any free variables in the expression that appears in the argument.
+Free variable capture causes problems when an argument is equal to a variable name defined in the λ term. Free variable capture can be avoided by using [[Lambda Calculus#Alpha Reduction|alpha reduction]] to change the name of any bound variables that appear as free variables in the argument.

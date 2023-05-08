@@ -2,7 +2,7 @@
 
 ## Alterations in First order Tableaus
 
-* A literal is an atomic formula or its negation: $Person(x) $
+* A literal is an atomic formula or its negation: $Person(x)$
 
 * A closed term is a term that contains no variables - built only from constants and functions over constants.
 

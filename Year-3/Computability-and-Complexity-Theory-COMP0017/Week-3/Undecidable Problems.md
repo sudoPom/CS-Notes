@@ -1,14 +1,11 @@
 Due to the [[Church-Turing-Conjecture]] any problem that is unsolvable by a turing machine it will also be unsolvable by a well defined step-by-step procedure (like C++ and python).
 
 The degrees of solvability include:
+* [[Decidability-and-Recognizability#Decidability|Decidability]]
+* [[Decidability-and-Recognizability#Recognisability|Recognisability]]
+* Non-recognisability - a problem that is not solvable by any turing machine
 
-![[Decidability-and-Recognizability#Decidability]]
-
-![[Decidability-and-Recognizability#Recognisability]]
-
-And the lowest degree is `non recognisability` - a problem that is not solvable by any turing machine
-
-### The Halting Problem
+### Recognisability - The Halting Problem
 
 We claim that this problem is recognisable but undecidable.
 
@@ -51,7 +48,7 @@ Assume that $H^-$ is recognisable and let $M_{H^-}$ be the TM recognising it. We
 ![[Pasted image 20221101124220.png]]
 
 Now we run $M''$ on itself.
-* If $M''$ does not halt on itself as input then it will it will halt.
+* If $M''$ does not halt on itself as input then it will halt.
 * If $M''$ halts on itself as input then it will loop
 Again we have a contradiction
 
