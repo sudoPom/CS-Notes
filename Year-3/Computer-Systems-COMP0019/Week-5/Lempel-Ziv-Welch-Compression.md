@@ -1,10 +1,10 @@
-**LZW** Compression is a lossless compression scheme proposed by Terry Welch and enhanced by Abraham Lempel and Jacob Ziv. It works by replacing repeating sequences with a shorter code (like all other compression schemes). However it does not need to send the entire dictionary. However it does need the input symbol width. Table is initialised with codes for each character of length 1.
+**LZW** Compression is a lossless compression scheme proposed by Terry Welch and enhanced by Abraham Lempel and Jacob Ziv. It works by replacing repeating sequences with a shorter code (like all other compression schemes). However it does not need to send the entire dictionary. Despite this, it does need the input symbol width. Table is initialised with codes for each character of length 1.
 
 # Algorithm
 
 The table initially starts with a size of $2^N$, where $N$ is chosen by the implementor. 
 
-The input is split into 8 bit symbold and the output consists of codes fixed in width.
+The input is split into 8 bit symbols and the output consists of codes fixed in width.
 
 ### Pseudocode
 

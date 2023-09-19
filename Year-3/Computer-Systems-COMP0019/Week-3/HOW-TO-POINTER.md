@@ -4,11 +4,11 @@ A pointer in `C` is a 8 byte value which represents the address of something in 
 long *long_pointer;
 ```
 
-The address of a pointer (non pointer or not) can be retrieved as such:
+The address of a value (pointer or not) can be retrieved as such:
 
 ```c
 long val = 42;
-long_pointer = &val;
+type_t long_pointer = &val;
 ```
 
 The `&` token returns the address of the variable.

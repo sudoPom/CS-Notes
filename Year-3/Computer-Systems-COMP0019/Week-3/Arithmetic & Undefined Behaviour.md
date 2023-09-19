@@ -8,10 +8,10 @@ There are also additional types of specific sizes:
 | C Data Type | All Architecture Sizes |
 | ----------- | ---------------------- |
 | {u}int8_t   | 1                      |
-| {u}int16_t   | 2                      |
-| {u}int32_t   | 4                      |
-| {u}int64_t   | 8                      |
-| {u}pointer (im not sure what this actually is called)   | 4 or 8                       |
+| {u}int16_t  | 2                      |
+| {u}int32_t  | 4                      |
+| {u}int64_t  | 8                      |
+| {u}type_t   | 4 or 8                 |
 
 `{u}` is for unsigned but by default these data types are signed. Integers have a range between $0$ and $2^{w}-1$ if unsigned or $-2^{w-1}$ and $2^{w-1}-1$ if signed.
 
@@ -21,7 +21,7 @@ There are two [[Machine-Level Representation of Programs#Arithmetic and Logic Op
 
 ###### Signed vs Unsigned
 
-* Constants in C are signed by default but can be made unsigned by suffix them with a `U`.
+* Constants in C are signed by default but can be made unsigned by suffixing them with a "`U`".
 * Casting from signed to unsigned will just take the bit representation and interprets their value using the new representation.
 	* This can also be done implicitly when passing missmatching types to functions and variable assignments.
 * When there are expressions contain both signed and unsigned values, all signed values are implicitly converted to unsigned values.
@@ -45,11 +45,11 @@ int check_signed_increment(int c){
 }
 ```
 
-Generally it is best to check if behaviour is undefined without carrying out the actual undefined behaviour.
+Generally, it is best to check if behaviour is undefined without carrying out the actual undefined behaviour.
 
 ```c
 int check_signed_increment(int c){
-	assert(x != INT_MAX); // This could be dropped when x = INT_MAX
+	assert(x != INT_MAX); 
 	return x+1;
 }
 ```

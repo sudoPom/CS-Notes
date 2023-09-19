@@ -23,8 +23,7 @@ Each tier lays further from the CPU register file than its successor. ^tiers
 
 A cahce system is composed of:
 
-Cache -> $S = 2^s$ Cache sets -> $E$ Cache Lines
-
+Cache -> $S = 2^s$ Cache sets -> $E$ Cache Lines 
 A Cache line stores:
 * data of $B = 2^b$ bytes 
 * tag: uniquely identifies the data in a cache line
@@ -40,6 +39,7 @@ $$ ^structure
 ![[Pasted image 20230221225421.png]]
 
 ![[Pasted image 20230221230555.png]]
+
 ### Data Retrieval
 
 When data is requested from memory, the cache is checked first. If it contains the data stored in the requested address, it returns the data in the data block.
@@ -58,10 +58,10 @@ The set bits are not set to the higher order bits for spatial locality. If they 
 
 A direct mapped cache is of the form $(S, 1, B, m)$ - each cache set has exactly one line. This is the simplest form of cache and data retrieval works as follows:
 
-* Set selection: The $s$ bits are extracted to find the desires set.
+* Set selection: The $s$ bits are extracted to find the desired set.
 * Line matching: We determine if the word is in the line.
 	* If there is a match in tag bits and the valid bit is set the data is in the line.
-	* If not, we fetch the memory from the main memory and insert it into the line's data block at the correct offset and set the valid bit and update the tag bits. Since each set only has one line, we always replace the previously stored data when needed.
+	* If not, we fetch the data from the main memory and insert it into the line's data block at the correct offset and set the valid bit, updating the tag bits. Since each set only has one line, we always replace the previously stored data when needed.
 * Word Selection: We extract the word from memory starting from the correct offset and return it.
 
 ### Conflict Misses
@@ -79,7 +79,7 @@ float dotprod(float x[8], float y[8])
 }
 ```
 
-Given floats are 4 bytes long, and `x` and `y` lie next to each other in memory and that each cache block can hold 16 bytes (4 floats) and the cache consists of 2 sets (so that `x[i]` and y[i] maps to the same set) the following would happen:
+Given floats are 4 bytes long, and `x` and `y` lie next to each other in memory and that each cache block can hold 16 bytes (4 floats) and the cache consists of 2 sets (so that `x[i]` and `y[i]` maps to the same set) the following would happen:
 * x[0] to x[3] is stored in set 0
 * y[0] to y[3] is stored in set 0
 * x[0] to x[3] is stored in set 0 again
@@ -87,7 +87,7 @@ Given floats are 4 bytes long, and `x` and `y` lie next to each other in memory 
 
 This can occur when accessing arrays that are a size of a power of 2. 
 
-A problem can be solved with padding the end of each array so that each value at array index `i` now maps to different sets.
+This problem can be solved by padding the end of each array so that each value at array index `i` now maps to different sets.
 
 ## Set Associative Caches
 

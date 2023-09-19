@@ -36,20 +36,21 @@ And the return value is stored in `$rax`.
 
 For procedures using more than 6 arguments, the stack is used.
 
-The currently running procedure has a frame pointer between registers `$rbp` and `$rsp`. This space can be grown and shrank by decrementing and incrementing the stack pointer (`$rsp`) respectively.
+The current running procedure has a frame pointer between registers `$rbp` and `$rsp`. This space can be grown and shrank by decrementing and incrementing the stack pointer (`$rsp`) respectively.
 
 ### Register Conventions
 
-When calling other functions, the calling function cannot guarantee that the registers were not used by the called function. To deal with this problem, certain registers are conventionally expected to be saved by the caller function and other functions on (this can be by storing the register contents on the stack).
+When calling other functions, the calling function cannot guarantee that the registers were not used by the called function. To deal with this problem, certain registers are conventionally expected to be saved by the caller function and others by the callee function (this can be by storing the register contents on the stack).
+
 | Caller Saved Registers | Callee Saved Registers |
-| --------------------- | --------------------- |
-| `$rdi`                | `$rbx`                |
-| `$rsi`                |          `$rbp`             |
-| `$rdx`                |               `$r12`        |
-| `$rcx`                | `$r13`                      |
-| `$r8`                 | `$r14`                      |
-| `$r9`                 | `$r15`                      |
-| `$r10`                |                       |
+| ---------------------- | ---------------------- |
+| `$rdi`                 | `$rbx`                 |
+| `$rsi`                 | `$rbp`                 |
+| `$rdx`                 | `$r12`                 |
+| `$rcx`                 | `$r13`                 |
+| `$r8`                  | `$r14`                 |
+| `$r9`                  | `$r15`                 |
+| `$r10`                 | `$rax`                   |
 
 
 

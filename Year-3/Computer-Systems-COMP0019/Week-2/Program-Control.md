@@ -91,7 +91,7 @@ A conditional move is a `mov` instruction that only does the operation if a cond
 cmovle src dest
 ```
 
-The above translates to "If the previous instruction satifies to less than or equal to, move `src` to `dest`". This can be done in C:
+The above translates to "If the previous instruction satifies less than or equal to, move `src` to `dest`". This can be done in C:
 
 ```c
 result = then_expr;
@@ -199,7 +199,7 @@ long pcount_do(unsigned long x){
 	size_t i;
 	long result = 0;
 	for(i = 0; i < WSIZE; i++){
-		unsigned bit = (x >> 1) & 0x1;
+		unsigned bit = (x >> i) & 0x1;
 		result += bit
 	}
 	return result;
@@ -251,8 +251,7 @@ switch(n){
 	case 103:
 		val += 11;
 		break
-
-	case 104: //Accepts multople values.
+	case 104: //Accepts multiple values.
 	case 106:
 		val *= val
 		break;
@@ -273,13 +272,14 @@ A jump table is an array of addresses which points to blocks of code.
 ```
 switch2:
 	addq    $2, %rdi
-	cmpq    $8, %rdi // Check to see if the argument should be in the default case.
+	cmpq    $8, %rdi // Check to see if the argument should be in the                                         
+	                 // Default case
 	ja      .L2 // Jumps to default case
 	jmp     *.L4(,%rdi,8) // Performs the jump to the correct block in the switch
 						  // Statement
 ```
 
-A jump table is just an array of addresses in assembly:
+In assembly, a jump table is just an array of addresses :
 
 ```
 .L4:

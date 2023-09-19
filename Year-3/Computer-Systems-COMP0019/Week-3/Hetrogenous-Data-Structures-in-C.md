@@ -14,11 +14,15 @@ struct rec {
 };
 ```
 
+
+
+
+
 A `rec` object would be stored in memory as such.
 
 ![[Pasted image 20230131095215.png]]
 
-Accessing a field of the structure adds the corresponding byte offset. For example field `i` is stored at the address of the `rec` object, whilst field `j` is stored at the address of the `rec` object + 4. 
+Accessing a field of the structure adds the corresponding byte offset. For example field `i` is stored at the address of the `rec` object, whilst field `j` is stored at the address of the `rec` object + 4 bytes. 
 
 ### Unions
 
@@ -32,7 +36,7 @@ union U3 {
 };
 ```
 
-The `c, i` and `v` fields all have an offset of 0. The entire union object would take up the size of the largest field type, in this case it would be 8 bytes - the size of a double. 
+The `c, i` and `v` fields all have an offset of 0. The entire union object would take up the size of the largest field type, in this case it would be 8 bytes - the size of the double `v`. 
 
 Unions can lead to weird bugs but can be useful in special cases - like when we know two fields of a struct are going to be mutually exclusive. Which will enable us to save space in the long run.
 
@@ -53,7 +57,7 @@ This alignment is enforced in structs and can be done in assembly.
 .align 8
 ```
 
-The above ensures the data following it is will start at an address that is a multiple of 8. This can be used for jump tables, which hold 8 byte long addresses.
+The above ensures the data following it will start at an address that is a multiple of 8. This can be used for jump tables, which hold 8 byte long addresses.
 
 Given the following struct `S1`:
 

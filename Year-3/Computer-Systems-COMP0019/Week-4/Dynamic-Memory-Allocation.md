@@ -1,7 +1,7 @@
 
 When extra memory is required at run time programmers tend to use a **dynamic memory allocator**. The dynamic memory allocator manages part of a process's virtual memory called the heap, which grows upwards in addresses rather than downwards like the stack does. The kernel maintains a variable `brk` which points to the top of the heap. 
 
-Memory in the heap is either allocated (in use by the application) or free. Blocks of memory remains in this state unless explicitly changed. There are two types of allocators which differ in terms of who is responsible for freeing allocated blocks:
+Memory in the heap is either allocated (in use by the application) or free (not in use). Blocks of memory remain in their state unless explicitly changed. There are two types of allocators which differ in terms of who is responsible for freeing allocated blocks:
 
 * Explicit allocators require the application to explicitly free any allocated
 blocks.
@@ -19,7 +19,7 @@ The `malloc` function in c returns a block of the requested size of memory depen
 void *malloc(size_t size);
 ```
 
-In 64-bit mode the addresses returned is alwats a multiple of 16, whilst in 32 bit mode they will be a multiple of 8.
+In 64-bit mode the addresses returned is always a multiple of 16, whilst in 32 bit mode they will be a multiple of 8.
 
 **Calloc** is a wrapper around the `malloc` function which zeros out all the bits of the allocated memory.
 **Realloc** allows users to re-allocate an already allocated memory address - changing the size of the allocated space.
@@ -32,7 +32,7 @@ void *sbrk(intptr_t incr);
 
 ^3c5c43
 
-`sbrk` returns the old stack pointer on success and -1 on error. This function works by growing or shrinking the heap by adding `incr` to the kernel's `brk` pointer. The actual return value is the old `brk + abs(incr)` meaning that while using a negative `incr` value is legal, extra precautions need to be taken when working with the return value.
+`sbrk` returns the old stack pointer on success and -1 on error. This function works by growing or shrinking the heap by adding `incr` to the kernel's `brk` pointer. The old `brk` points to `abs(incr)` away from the new `brk` meaning that while using a negative `incr` value is legal, extra precautions need to be taken when working with the return value.
 
 #### Free
 
@@ -56,7 +56,7 @@ Explicit Allocators have the following constraints:
 With these goals in mind the creator of an allocator would have the following goals in mind:
 * Maximizing throughput - number of requests fulfilled per unit time. This can be achieved by reducing the time for each request.
 * Maximizing memory utilisation: Ensuring the memory is being used effectively.
-	The **peak utilization** over the first $n+1$ requests is defined as:
+	The **peak utilization** over the first $k+1$ requests is defined as:
 	$$
 \begin{align}
 U_k = \frac{max_{i\leq k}P_i}{H_k}
@@ -74,7 +74,7 @@ $$
 \text{total size of allocated blocks} - \text{total payload size}
 \end{align}
 $$
-**External ftagmentation** occurs when there is enough aggregate memory to satisfy a request, but no one block of memory can satisfy the request. External fragmentation is harder to quantify due to it depending on the pattern of future requests.
+**External fragmentation** occurs when there is enough aggregate memory to satisfy a request, but no one block of memory can satisfy the request. External fragmentation is harder to quantify due to it depending on the pattern of future requests.
 
 ### Implicit Free Lists
 
@@ -82,7 +82,7 @@ An allocator needs some way of keeping track of the boundaries between blocks, a
 
 ![[Pasted image 20230201220818.png]]
 
-Assuming a double word allignment rule (8 bytes) addresses will always be saved at multiples of 8, meaning the last 3 bits of the block size will be 0. This means we can use the last 3 bits to encode something else, in this case it is whether or not the block is allocated or free.
+Assuming a word is 4 bytes and a double word allignment rule (8 bytes) addresses will always be saved at multiples of 8, meaning the last 3 bits of the block size will be 0. This means we can use the last 3 bits to encode something else, in this case it is whether or not the block is allocated or free.
 
 At the end of the heap space we need a special "end" block which is set to allocated and has a size of 0. The Implicit Free list is simple but inefficient as it takes linear time to search the free list. The systems allignment requirement as well as the allocators block format imposes a minimum block size rule.
 
@@ -93,13 +93,13 @@ Allocated blocks can be placed in three ways:
 
 **Splitting Free Blocks** is the process of splitting a free block into two parts in the event that an allocation does not require the entirety of a free block. The first part consists of the allocated block and the second half is the new free block.
 
-If the program requires more space on the heap then the allocator will attempt to merge (coalesc) free blocks together to produce more free space. If this does not happen then the allocator will make a request to the kernel to add more heap space via the [[Dynamic-Memory-Allocation#^3c5c43|sbrk]] function.
+If the program requires more space on the heap then the allocator will attempt to merge (coalesc) free blocks together to produce a larger free blocks. If this does not happen then the allocator will make a request to the kernel to add more heap space via the [[Dynamic-Memory-Allocation#^3c5c43|sbrk]] function.
 
 ###### Coalescing Free Blocks
 
-When blocks are allocated next to free blocks, freeing those blocks can result in **false fragmentation** where there are two free blocks next to each other that are of a size to small to be used for allocations. Adjacent blocks can be merged to prevent this problem.
+When blocks are allocated next to free blocks, freeing those blocks can result in **false fragmentation** where there are two free blocks next to each other that are too small to be used for allocations. Adjacent blocks can be merged to prevent this problem.
 
-Coalescing can be done either immediately (after a block is freed) or deferred (doing it later). For example  coalescing could be done only when an allocation request fails. Immediate coalescing is simple but can cause a form of **thrashing** as blocks of memory are being merged and split repeatedly.
+Coalescing can be done either immediately (after a block is freed) or deferred (doing it later). For example, coalescing could be done only when an allocation request fails. Immediate coalescing is simple but can cause a form of **thrashing** as blocks of memory are being merged and split repeatedly.
 
 **Boundary tags** are essentially footers for each memory block that contains the exact same information that the header has. This can be used in order to coalesc two blocks of memory in constant time - even if the target block is behind the current block.
 

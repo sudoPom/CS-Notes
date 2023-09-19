@@ -4,7 +4,7 @@ There are two types of RAM:
 * Static RAM 
 * Dynamic RAM
 
-DRAM needs to be refreshed periodically since it uses cells that hold charges to store bits. Each cell requires 1 bit to store information
+DRAM needs to be refreshed periodically since it uses cells that hold charges to store bits. Each cell stores 1 bit of information. DRAM is very sensitive to disturbance. A collection of these cells is called a supercell
 
 SRAM stores data using a transitor circuit and does not need to be refreshed to hold a state. They do however require 6 transistors to store a bit of information. The circuit used by SRAM can stay in a single state indefinitely based on a HI or LO voltage value. A voltage value between these two values is considered unstable: ^7fb51a
 
@@ -12,24 +12,24 @@ SRAM stores data using a transitor circuit and does not need to be refreshed to 
 
 ### Synchronous DRAM
 
-As time went on there became better ways to interface to DRAM using **Synchronous DRAM (SDRAM)** which uses a conventional clock signal. that the rest of the motherboard uses, rather than asynchronous control. It also allows the reuse of the row addresses when trying to access sequential columns on the same row.
+As time went on there became better ways to interface to DRAM using **Synchronous DRAM (SDRAM)** which uses a conventional clock signal that the rest of the motherboard uses, rather than asynchronous control. It also allows the reuse of the row addresses when trying to access sequential columns on the same row.
 
-### Double Data Rate Synchronous DRAM 
+#### Double Data Rate Synchronous DRAM 
 
 Double Data Rate Synchronous DRAM (DDR SDRAM) uses both rising and falling edges of the clock, allowing two bits to be sent per cycle per pin. There are different types depending on the prefetch buffer:
 * DDR = 2 bit prefetch
 * DDR2 = 4 bit prefetch
 * DDR4 = 8 bit prefetch.
 
-##### Nonvolatile Memories
+### Nonvolatile Memories
 
 Both DRAM and SRAM are volatile memories meaning they lose information when powered off.
 
 Some nonvolatile memories include:
 * Read-only memory (ROM) - programmed during production
 * Programmable ROM (PROM) - can be programmed once
-* Erasable PROM (EPROM) - can be programmed once
-* Electrically erasable PROM (EEPROM) - electronic erase capability
+* Erasable PROM (EPROM) - can be reprogrammed
+* Electrically erasable PROM (EEPROM) - Can be reprogrammed on the same device - another seperate physical device is not needed.
 * Flash Memory: EEPROMs with partial erase capability. Memory is seperated to blocks and only blocks can be erased. 
 	* Each block wears out after about 100,000 erasings. ^29c35a
 * 3D XPoint (Intel Optane) & emerging NVMs
@@ -68,18 +68,18 @@ Available sectors in modern computers model sectors as a sequence of logical blo
 
 There is a mapping between logical blocks and actual physical sectors, which is maintained by the hardware device called the disk controller (not the CPU disk controller, a disk controller embedded in the disk). The mapping converts requests to (surface, track, sector) triples.
 
-This allows the controller to set aside spare cylinders for each zone, which is why the formatted capacity and maximum capacity.
+This allows the controller to set aside spare cylinders for each zone, which is why the formatted capacity and maximum capacity are different.
 
 ### Flash Memory
 
-Flash memory is organized in blocks, which each contain a certain amount og pages. Pages tend to be between 512B and 412KB and each block contains between 32 and 48 pages. 
+Flash memory is organized in blocks, which each contain a certain amount of pages. Pages tend to be between 512B and 412KB and each block contains between 32 and 48 pages. 
 
-Data read/write can only be done in units of pages, but erausre is done in units of blocks. As stated [[The-Memory-Hierarchy#^29c35a|earlier]], erasure can only be done a certain amount of times before the block becomes unusable. Eraw sure tends to be slow (~1ms).
+Data read/write can only be done in units of pages, but erausre is done in units of blocks. As stated [[The-Memory-Hierarchy#^29c35a|earlier]], erasure can only be done a certain amount of times before the block becomes unusable. Erasure tends to be slow (~1ms).
 
-| Advantages     | Disadvantages                     |
-| -------------- | --------------------------------- |
-| No moving part | Have the potential of wearing out |
-|                | More Expensive than HDD                                  |
+| Advantages      | Disadvantages                     |
+| --------------- | --------------------------------- |
+| No moving parts | Have the potential of wearing out |
+|                 | More Expensive than HDD           |
 
 #### Bus Structure
 

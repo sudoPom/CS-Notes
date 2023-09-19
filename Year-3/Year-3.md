@@ -14,4 +14,5 @@ type: folder_brief_live
 [[Computer-Systems-COMP0019]]
 [[Functional-Programming-COMP0020]]
 [[Group-Research-Project-COMP0031]]
+[[Robotics-in-Medicine-and-Industry-ELEC0145]]
 

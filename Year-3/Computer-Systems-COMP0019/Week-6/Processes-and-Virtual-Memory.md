@@ -11,7 +11,7 @@ links:
 
 A **process** is an instance of a running program. A process acts as if they have full access to the CPU and registers (due to context switching provided by the kernel). 
 
-Each process has a PID (process ID). At any given instance, a CPU is only running one process at a time. However the CPU will **context switch** between different processes. A CPU with multiple cores can truly run multiple processes at a time.
+Each process has a PID (process ID). At any given instance, a CPU is only running one process at a time. However the CPU will **context switch** between different processes. A CPU with multiple cores can actually run multiple processes at a time.
 
 If a process is context switched out, it needs to store the CPU register values so that they can be loaded back in when it's the process' turn to be executed by the CPU again.
 
@@ -19,7 +19,7 @@ Two processes are concurrent if their logical control flow overlap at the same t
 
 ##### Context Switching
 
-The kernel is a shared chunk of memory-resident OS code. Kernel code is not a process - it runs as part of an exsisting process. A context switch passes control flow processes.
+The kernel is a shared chunk of memory-resident OS code. Kernel code is not a process - it runs as part of an exsisting process. A context switch passes control flow to the kernel.
 
 ---
 
@@ -83,7 +83,7 @@ Virtual addresses consist of a **virtual page offset (VPO)** and **virtual page 
 
 Similarly physical addresses consist of a PPO (which is the same as the VPO) and the VPN. 
 
-The most significant bits of the address represents the page number (VPN/PPN) and the least significant $p$ bits represents the offset (VPO/PPO), where $p$ is the number of bits needed to represent the page size. 
+The most significant $n-p$ bits of the address represents the page number (VPN/PPN) and the least significant $p$ bits represents the offset (VPO/PPO), where $p$ is the number of bits needed to represent a page and $n$ is the address size. 
 
 To get an address from physical memory given a virtual address: ^17b5a8
 * The processor generates a virtual address and sends it to the MMU.
@@ -117,7 +117,7 @@ The TLB operates exactly like the [[Cache-Memory#^|set associative cache]].
 
 ![[Pasted image 20230228130009.png]]
 
-Since pages are very large, TLB lookups are rare, but if this happens then the PTE needs to be searched for in L1 cache, then L2, etc.
+Since pages are very large, TLB lookup misses are rare, but if this happens then the PTE needs to be searched for in L1 cache, then L2, etc.
 
 ![[Pasted image 20230228130112.png]]
 
@@ -125,7 +125,7 @@ Since pages are very large, TLB lookups are rare, but if this happens then the P
 
 For a 4KB page size, 48 bit virtual address space and 8 byte PTE we would need 512 GB of data to store the page table. (A lot)
 
-An $k$ level page table helps fix this problem. The page table in level one will store page table entries which each point to another page table (in level 2). This continues until reaching level $k$, where each page table entry points to a virtual page in virtual memory. 
+A $k$ level page table helps fix this problem. The page table in level one will store page table entries which each point to another page table (in level 2). This continues until reaching level $k$, where each page table entry points to a virtual page in virtual memory. 
 
 If every page table entry in a page table is null then it does not need any memory to be allocated.
 
