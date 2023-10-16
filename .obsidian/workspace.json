@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "6741b8324b01fa20",
+        "id": "8ac68a02e7839d3e",
         "type": "tabs",
         "children": [
           {
-            "id": "ebfd4250569d0eb6",
+            "id": "2ace0bde50b8e01e",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Lecture_3_Network_File_System.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -75,6 +79,7 @@
             "state": {
               "type": "localgraph",
               "state": {
+                "file": "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Lecture_3_Network_File_System.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -97,7 +102,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.571779139497188,
+                  "scale": 8,
                   "close": true
                 }
               }
@@ -146,6 +151,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Lecture_3_Network_File_System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -208,55 +214,55 @@
       "obsidian-excalidraw-plugin:New Excalidraw drawing": false
     }
   },
-  "active": "ebfd4250569d0eb6",
+  "active": "79bdf1d7a5946163",
   "lastOpenFiles": [
-    "Year-3/Year-3.md",
-    "Year-3/Robotics-in-Medicine-and-Industry-ELEC0145/Robotics-in-Medicine-and-Industry-ELEC0145.md",
-    "Year-4/Year-4.md",
-    "Year-4/Validation-and-Verification-COMP0103/Validation-and-Verification-COMP0103.md",
-    "Year-4/Software-Systems-Integration-COMP0102/Software-Systems-Integration-COMP0102.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Untitled.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Lecture_3_Network_File_System.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/Lecture_3_Git.md",
+    "images/Pasted image 20231010162903.png",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/Git.pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/Lecture_2_Version_Control.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/Lecture_1_Identifying_Changes.md",
     "Year-4/Software-Development-Practice-COMP0104/Software-Development-Practice-COMP0104.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Requirements-Engineering-and-Software-Architecture-COMP0101.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/0104-D 1.pptx",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2/0104-D.pptx",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week-1/Lecture_2_Operating_Systems.md",
+    "Year-3/Computer-Systems-COMP0019/Week-9/I_O.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2",
+    "images/Pasted image 20231009161438.png",
+    "images/Pasted image 20231009145935.png",
+    "Year-4/Software-Systems-Integration-COMP0102/Software-Systems-Integration-COMP0102.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week-2",
+    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week-1/Lecture_1_Foundations.md",
+    "images/Pasted image 20231006163333.png",
+    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week-1/1. Foundations.pdf",
+    "Year-3/Computer-Systems-COMP0019/Week-10/Threads-and-Concurrency-in-C.md",
+    "Year-3/Computer-Systems-COMP0019/Week-7/Processes-and-Exceptional-Control-Flow.md",
+    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-7/Thread-Level-Parallelism.md",
+    "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
+    "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
+    "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
+    "Year-3/Computer-Systems-COMP0019/Week-5/Lempel-Ziv-Welch-Compression.md",
+    "Year-3/Computer-Systems-COMP0019/Week-6/Cache-Memory.md",
+    "Year-3/Computer-Systems-COMP0019/Week-6/Processes-and-Virtual-Memory.md",
+    "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
+    "Year-2/Computer-Architecture-and-Concurrency-COMP0008/Week-5/System-Calls.md",
+    "Year-3/Computer-Systems-COMP0019/Week-8/Shells.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week-1/Lecture_1_Overview_of_Distributed_Systems.md",
     "Year-4/Practical-Programming-Analysis-COMP0174/Practical-Programming-Analysis-COMP0174.md",
     "Year-4/Distributed-Systems-and-Security-COMP0133/Distributed-Systems-and-Security-COMP0133.md",
-    "Year-3/Machine-Learning-For-Robotics-ELEC0144/Machine-Learning-For-Robotics-ELEC0144.md",
-    "Year-3/Research-Methods-COMP0030/Research-Methods-COMP0030.md",
-    "Year-4/Practical-Programming-Analysis-COMP0174",
-    "Year-4/Validation-and-Verification-COMP0103",
-    "Year-4/Software-Systems-Integration-COMP0102",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101",
-    "Year-4/Distributed-Systems-and-Security-COMP0133",
-    "Year-4/Software-Development-Practice-COMP0104",
-    "Year-4",
-    "Year-3/Computer-Systems-COMP0019/Week-10/Threads-and-Concurrency-in-C.md",
-    "Year-3/Computer-Systems-COMP0019/Week-2/Program-Control.md",
-    "Year-3/Computer-Systems-COMP0019/Week-1/Machine-Level Representation of Programs.md",
-    "Year-3/Computer-Systems-COMP0019/Computer Systems A Programmers Perspective (3rd).pdf",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Procedures.md",
-    "Year-3/Computer-Systems-COMP0019/Week-5/The-Memory-Hierarchy.md",
-    "Year-3/Computer-Systems-COMP0019/Week-9/Signals.md",
-    "Year-3/Computer-Systems-COMP0019/Week-9/I_O.md",
-    "Year-3/Computer-Systems-COMP0019/Week-7/Processes-and-Exceptional-Control-Flow.md",
-    "Year-3/Computer-Systems-COMP0019/Week-6/Processes-and-Virtual-Memory.md",
-    "Year-3/Computer-Systems-COMP0019/Week-6/Cache-Memory.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/HOW-TO-POINTER.md",
-    "Year-3/Computer-Systems-COMP0019/Week-4/Dynamic-Memory-Allocation.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Arithmetic & Undefined Behaviour.md",
-    "Year-3/Computer-Systems-COMP0019/Week-3/Hetrogenous-Data-Structures-in-C.md",
-    "Year-3/Computer-Systems-COMP0019/Week-5/Lempel-Ziv-Welch-Compression.md",
+    "images/Pasted image 20231005111634.png",
+    "images/Pasted image 20231005105915.png",
+    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Requirements-Engineering-and-Software-Architecture-COMP0101.md",
+    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week-1/1. Foundations.pptx",
+    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week-1",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week-1",
+    "Year-4/Software-Development-Practice-COMP0104/Week-1/Untitled",
     "Untitled 1.canvas",
-    "Year-3/Functional-Programming-COMP0020/Week-3/Lecture 09.pdf",
-    "Year-3/Functional-Programming-COMP0020/Week-1/Lecture 03.pdf",
     "images/Pasted image 20230418210556.png",
     "images/Pasted image 20230418143510.png",
     "images/Pasted image 20230418143008.png",
     "images/Pasted image 20230418141206.png",
-    "images/Pasted image 20230418135419.png",
-    "Untitled.canvas",
-    "images/Pasted image 20230414225341.png",
-    "images/Pasted image 20230414223113.png",
-    "images/Pasted image 20230414221543.png",
-    "images/Pasted image 20230414220257.png",
-    "images/Pasted image 20230414215904.png"
+    "Untitled.canvas"
   ]
 }

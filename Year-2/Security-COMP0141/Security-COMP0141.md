@@ -7,7 +7,7 @@ type: folder_brief_live
 ## Tags
 
 ### Week 1
-[[Introduction]]
+[[Year-2/Security-COMP0141/Week-1/Introduction]]
 [[Human-Centered-Security]]
 [[Threat-Modelling]]
 [[What-is-Security]]

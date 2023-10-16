@@ -27,7 +27,7 @@ Some of these simple tools include:
 | grep    | Search for matching lines in input |
 | more    | Show input one screen at a time    |
 | cat     | Print the contents of a file       |
-| sort    | Sort input lexicographically                                   |
+| sort    | Sort input lexicographically       |
 
 **Pipes** allow the shells user to combine these tools together to do more complex tasks.
 

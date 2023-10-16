@@ -31,7 +31,7 @@ A regular file contains arbitrary data. There are text files, holding readable c
 
 Text files are a sequence of *text lines*, which are terminated by `\n`. However in windows and internet protocols terminate newlines with `\r\n`.
 
-#### Dicrectories
+#### Directories
 
 A directory contains an array of links, with each link pointing to a file. Every directory has links `.` and `..` being links to the current and parent directory.
 
