@@ -28,7 +28,7 @@ A `strategic` adversary chooses the optimal way to use their resources to mount 
 
 `STRIDE` is an acronym that represents some of the possible threats that systems are liable to.
 
-* `Spoofing`: pretending to be someone else to gain their information. (Attack on Integrity)
+* `Spoofing`: pretending to be someone else to gain their information. (Attack on Integrity) ^db35a5
 * `Tampering`: Listening in to a communication and impersonate one of the communicators by getting in between the communication. (Attack on Integrity)
 * `Repudation` : Denying that you sent a message. (Attack on integrity)
 * `Information Disclosure` (Protected against via Confidentiality)

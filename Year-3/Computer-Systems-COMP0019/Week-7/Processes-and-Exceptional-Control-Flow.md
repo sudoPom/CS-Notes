@@ -22,7 +22,7 @@ For a useful system we need to be able to react to changes in system state. An e
 High level mechanisms include:
 * Process context switch
 * Signals: Something happened to the system that the process should know of.
-* Nonlocal jumps
+* Non local jumps
 
 ### Exceptions
 
