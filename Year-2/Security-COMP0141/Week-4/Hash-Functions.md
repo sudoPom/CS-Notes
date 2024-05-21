@@ -21,7 +21,7 @@ A collision attack involves finding two different messages that have the same ha
 * Checksum - Used to detect errors introduced by humans or for corruption when transmitting large files.
 * (H)MACs - Constructs a [[Message-Authentication-Codes|MAC]] using a hash function:
 	$HMAC(k,m) = H(k\oplus opad || H(k\oplus ipad || m ))$ 
-	Where $ipad,opad$ are fixed strings and $k$ is the key.
+	Where $ipad,opad$ are fixed strings and $k$ is the key. ^a4a75c
 * Blockchains:
 	Hashes are computed by splitting data into blocks and performing hashes on the current block concattenated with the hash of the block before it.
 

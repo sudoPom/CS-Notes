@@ -1,7 +1,7 @@
 # Introduction to Integrity and Digital Signatures
 `Integrity` in security involves knowing that the system and data have not been improperly altered. 
 
-A `Man-in-the-Middle attack` occurs when the adversary intercepts the communication between two people. This is an active attack since it breaks the communication protocol. Communicators should be able to guarantee that the messages they are recieving comes from who they think it is - they should be able to validate the integrity of the messages they are recieving.
+A `Man-in-the-Middle attack` occurs when the adversary intercepts the communication between two people. This is an active attack since it breaks the communication protocol. Communicators should be able to guarantee that the messages they are recieving comes from who they think it is - they should be able to validate the integrity of the messages they are recieving. ^1a6567
 
 ![[Screenshot_20220512_174058.png]]
 The evesdropper pretends to be Bob with Alice and Alice with Bob.

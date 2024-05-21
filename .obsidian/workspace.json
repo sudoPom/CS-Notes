@@ -4,35 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a04d76b5278f75f5",
+        "id": "4cf1692bbd9e4326",
         "type": "tabs",
         "children": [
           {
-            "id": "7701fb3fc54d421b",
+            "id": "2de98c14d22718e8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Year-4/Software-Development-Practice-COMP0104/Week_4/Untitled.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "736636368d712906",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "4fa12e308e6a1476",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Year-4/Software-Development-Practice-COMP0104/Week_4/Ant.pdf"
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -47,7 +27,7 @@
       {
         "id": "7d591d55fd6af0f7",
         "type": "tabs",
-        "dimension": 63.81019830028328,
+        "dimension": 63.85017421602788,
         "children": [
           {
             "id": "5cfd79a6fe0b921b",
@@ -65,8 +45,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fault",
-                "matchingCase": true,
+                "query": "",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -75,7 +55,7 @@
             }
           },
           {
-            "id": "74aa7e545a1f2d41",
+            "id": "e323e0a918ead6b2",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -87,7 +67,7 @@
       {
         "id": "30df4985a9f0e5b7",
         "type": "tabs",
-        "dimension": 36.18980169971671,
+        "dimension": 36.149825783972126,
         "children": [
           {
             "id": "79bdf1d7a5946163",
@@ -95,7 +75,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Year-4/Software-Development-Practice-COMP0104/Week_4/Ant.pdf",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -118,7 +97,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 8,
+                  "scale": 5.904016205392832,
                   "close": true
                 }
               }
@@ -167,7 +146,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Year-4/Software-Development-Practice-COMP0104/Week_4/Ant.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -219,66 +197,64 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-excalidraw-plugin:New Excalidraw drawing": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "markdown-importer:Open format converter": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-excalidraw-plugin:New Excalidraw drawing": false
+      "markdown-importer:Open format converter": false
     }
   },
-  "active": "4fa12e308e6a1476",
+  "active": "2de98c14d22718e8",
   "lastOpenFiles": [
-    "Year-4/Software-Development-Practice-COMP0104/Week_4/Maven.pdf",
-    "Year-4/Software-Development-Practice-COMP0104/Week_3/Make.pdf",
-    "Year-4/Software-Development-Practice-COMP0104/Week_4/Untitled.md",
-    "Year-4/Software-Development-Practice-COMP0104/Week_3/Lecture_4_Build_Systems_and_Make.md",
-    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/ivy.pdf",
-    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/Lecture_5_Ivy.md",
-    "Year-4/Software-Development-Practice-COMP0104/Week_4",
-    "Year-3/Computer-Systems-COMP0019/Week-7/Processes-and-Exceptional-Control-Flow.md",
-    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/Unconfirmed 208406.crdownload",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_10/Lecture_19_Meltdown.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_10/Lecture_18_OKWS.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_10/Lecture_17_Software-Based_Fault_Isolation.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_9/Lecture_16_Defences.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_8/TAOS.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_8/Lecture_15_Software_Vulnerabilities_and_Exploits.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_8/Lecture_14_SSL_and_TLS.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_8/Kerberos.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_7/Lecture_12_Cryptographic_Primitives_II.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_7/Lecture_11_Introduction_to_Security_and_User_Authentication.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_6/Lecture_10_Livelock.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_6/receive-livelock.pdf",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_5/Lecture_8_Bayou.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_6/Lecture_9_Google_File_System.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_5/Lecture_7_Paxos.md",
     "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/Lecture_4_Remote_Procedure_Calls.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_4/Lecture_6_Two_Phase_Commit.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/Lecture_5_Ivy.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Week_3/ivy.pdf",
     "Year-4/Distributed-Systems-and-Security-COMP0133/Week_2/Lecture_3_Network_File_System.md",
     "Year-4/Distributed-Systems-and-Security-COMP0133/Week_1/Lecture_2_Operating_Systems.md",
     "Year-4/Distributed-Systems-and-Security-COMP0133/Week_1/Lecture_1_Overview_of_Distributed_Systems.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_3/Lecture_7_Domain_Scenarios.md",
-    "images/Pasted image 20231019111716.png",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_3/303 - Domain Scenarios.pdf",
-    "images/Pasted image 20231019111500.png",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_3/Lecture_6_Investigation_Understanding_Problems_and_Solutions.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_3/202-Investigation.pdf",
-    "images/Pasted image 20231019104639.png",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/Lecture_4_Context_Diagrams.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/302 - Domain Conceptual Models.pdf",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/Lecture_5_Domain_Conceptual_Models.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_3",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week-2/week2_domain_conceptual_model.drawio",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/Lecture_3_Initiation.md",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/201. Initiation.pdf",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_2/Lecture_2_Requirements_Process_Overview.md",
-    "images/Pasted image 20231018135642.png",
-    "images/Pasted image 20231018135344.png",
-    "images/Pasted image 20231018133428.png",
-    "images/Pasted image 20231018133041.png",
-    "images/Pasted image 20231018131636.png",
-    "images/Pasted image 20231018131232.png",
-    "images/Pasted image 20231018131141.png",
-    "Year-4/Requirements-Engineering-and-Software-Architecture-COMP0101/Week_1/Lecture_1_Foundations.md",
-    "Year-4/Final_Year_Project/CoLa.md",
-    "Year-4/Final_Year_Project/How_to_Write_a_Dissertation.md",
-    "Year-4/Software-Development-Practice-COMP0104/Software-Development-Practice-COMP0104.md",
-    "Year-4/Year-4.md",
-    "Untitled.md",
-    "Year-4/Software-Development-Practice-COMP0104/Week_2/Lecture_2_Version_Control.md",
+    "Year-3/Computer-Systems-COMP0019/Week-6/Processes-and-Virtual-Memory.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week_4/Lecture_7_Gradle.md",
+    "Year-4/Distributed-Systems-and-Security-COMP0133/Distributed-Systems-and-Security-COMP0133.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week_4/Lecture_5_Another_Neat_Tool.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week_4/Ant.pdf",
     "Year-4/Software-Development-Practice-COMP0104/Week_2/Lecture_1_Identifying_Changes.md",
-    "Year-2/Security-COMP0141/Week-1/Threat-Modelling.md",
-    "Year-2/Security-COMP0141/Week-1/Introduction.md",
-    "Year-2/Security-COMP0141/Security-COMP0141.md",
-    "Untitled 1.canvas",
-    "Untitled.canvas"
+    "Year-4/Software-Development-Practice-COMP0104/Week_2/Lecture_3_Git.md",
+    "Year-4/Software-Development-Practice-COMP0104/Week_2/Git.pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_10/0104-U.pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_10/0104-T.pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_10/0104-S (2).pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_9/0104-S (1).pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_8/0104-R.pdf",
+    "Year-4/Software-Development-Practice-COMP0104/Week_8/0104-Q.pdf",
+    "images/Pasted image 20240501173415.png",
+    "images/Pasted image 20240130162433.png",
+    "images/Pasted image 20231207103912.png",
+    "images/Pasted image 20231207101328.png",
+    "images/Pasted image 20231130094707.png",
+    "images/Pasted image 20231127142956.png",
+    "images/Pasted image 20231123104316.png",
+    "images/Pasted image 20231123103629.png",
+    "images/Pasted image 20231123094151.png",
+    "images/Pasted image 20231123093932.png"
   ]
 }

@@ -5,7 +5,7 @@ There are two sides to modern cryptography, symmetric and private key cryptograp
 Symmetric ciphers make use of a key shared between sender and recipient. There are two types of symmetric ciphers.
 
 ### Stream Cipher
-In a `stream cipher` each bit is encrypted seperately. They work by attempting to mimic the [[An-Introduction-to-Ciphers#One time Pad|one time pad]] by generating a long, pseudo-random key string from an `initialisation vector`  (a random number) and a fixed size key.
+In a `stream cipher` each bit is encrypted separately. They work by attempting to mimic the [[An-Introduction-to-Ciphers#One time Pad|one time pad]] by generating a long, pseudo-random key string from an `initialisation vector`  (a random number) and a fixed size key.
 
 ![[Pasted image 20220128181629.png]]
 
@@ -20,12 +20,16 @@ The generated key $r$ is then `XORed` with the message bit by bit to obtain the 
 * Bob decrypts the message.
 
 ### Block Ciphers
-In a `block cipher` blocks of bits are encrypted. The key is a short random string used for each block of the message (128, 192 or 256). If the plain text is shorter than the key then it must be padded to match the key length. The goal is to encrypt blocks of cipher text to some randompermutation of the english alphabet.
+In a `block cipher` blocks of bits are encrypted. The key is a short random string used for each block of the message (128, 192 or 256). If the plain text is shorter than the key then it must be padded to match the key length. The goal is to encrypt blocks of text to same length blocks of ciphertext.
 ![[Pasted image 20220128182516.png]]
 
 The same key can then be used to decrypt the message.
 
-Block ciphers were developed to create the `Advanced Encryption Standard (AES)` - which is a specification for the encryption of data.
+Block ciphers were developed to create the `Advanced Encryption Standard (AES)` - which is a specification for the encryption of data. 
+
+Electronic code book method divides the message into blocks of the ciphers block size and encrypt each block individually with the same key. This however does not provide secrecy - if there are repeated blocks in the plain text then it will appear repeated in the plain text.
+
+CBC (cipher block chaining) mode takes in a random initialisation vector and the first block. The output is the encryption for block one, which is then fed in as the "new" initialisation vector for block two, and so on.
 
 ## Key Establishment 
 `Key Establishment` is the process of generating the key for two communicators. Key's can't just be sent across an insecure network as it is easy for adversaries to  steal the key, defeating it's purpose.

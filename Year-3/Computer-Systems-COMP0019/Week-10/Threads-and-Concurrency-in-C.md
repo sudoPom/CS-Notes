@@ -14,7 +14,7 @@ A *thread* is a portion of the memory model which consists of its own stack fram
 
 ### Posix
 
-In C, the posix library is used for writing concurrent programs.
+In C, the Posix library is used for writing concurrent programs.
 
 ```c
 int pthread_create(pthread_t tid,
@@ -23,7 +23,7 @@ int pthread_create(pthread_t tid,
 			   void* thread_arg)
 ```
 
-`pthread_create` creates a new thread and executes the thread_func on that thread. Upon success it returns 0 abd returns a positive error code on failure.
+`pthread_create` creates a new thread and executes the thread_func on that thread. Upon success it returns 0 and returns a positive error code on failure.
 
 ```c
 pthread_exit(void *value)
@@ -41,13 +41,13 @@ pthread_join(pthread_t thread, void **status)
 int pthread_detach(pthread_t thread)
 ```
 
-`pthread_detach` detaches a thread meaning that when  the thread finishes execution it will vanish, so there is no need to wait for it. Deatching a detached thread is undefined behaviour.
+`pthread_detach` detaches a thread meaning that when  the thread finishes execution it will vanish, so there is no need to wait for it. Detaching a detached thread is undefined behaviour.
 
 ```c
 pthread_t pthread_self()
 ```
 
-`pthread_self` returns the thread id of the calling thread. On linux `pthread_t` is an unsigned long but on mac it is a pointer to `_opaque_pthread_`. 
+`pthread_self` returns the thread id of the calling thread. On Linux `pthread_t` is an unsigned long but on mac it is a pointer to `_opaque_pthread_`. 
 
 To compare two threads you should use the `pthread_equal` function:
 

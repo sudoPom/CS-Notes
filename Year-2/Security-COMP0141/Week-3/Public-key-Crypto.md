@@ -1,5 +1,5 @@
 # Public (Asymmetric) Key Cryptography
-`Public Key Encryption` uses a public key to encrypt messages. $pk_u$  is the public key for the user $u$. To send a message to user $a$ you encrypt the message with $pk_a$ and user $a$ will decrypt the message using their secret key, $sk_a$. This means every user will have a public key, stored in the PKI or `public key infrastructure` and a secret key that is kept to theirselves these will be created by a `key generator`.
+`Public Key Encryption` uses a public key to encrypt messages. $pk_u$  is the public key for the user $u$. To send a message to user $a$ you encrypt the message with $pk_a$ and user $a$ will decrypt the message using their secret key, $sk_a$. This means every user will have a public key, stored in the PKI or `public key infrastructure` and a secret key that is kept to themselves these will be created by a `key generator`.
 
 
 ### Conditions
@@ -25,8 +25,9 @@ By default, any adversary is assumed to have access to the encryption key (as th
 * pick $e,d$ such that $e$ is small and $e,d$ are coprime ($ed=1\mod{(p-1)(q-1)}$) $e$ can be as small as 3.
 * $pk = (N,e)$
 * $sk=(N,d)$
+* Discard $p$ and $q$
 #### Encryption
-* Generate cipher text - $c = m^e \mod{N}$ 
+* Generate cipher text: $c = m^e \mod{N}$ 
 
 #### Decryption
 * Decrypt cipher text using $d$ the private key.
@@ -46,7 +47,7 @@ c^d \mod{N} &= (m^e)^d \mod{N}\\
 $$
 
 ### Security 
-If $N$ could be factored (you know $p$ and $q$) then you could compute $\phi({N})$ meaning you could compute  the private key $d = e^{-1}\mod{(p-1)(q-1)}$ . However factoring $N$ is an untractable algorithm so it is assumed that attackers cannot do this. So until the technology to factor $N$ comes along, RSA-2048 (where $N$ is a 2048 bit number) is considered secure.
+If $N$ could be factored (you know $p$ and $q$) then you could compute $\phi({N})$ meaning you could compute  the private key $d = e^{-1}\mod{(p-1)(q-1)}$ . However factoring $N$ is an intractable problem so it is assumed that attackers cannot do this. So until the technology to factor $N$ comes along, RSA-2048 (where $N$ is a 2048 bit number) is considered secure.
 
 This method is not as secure as actual RSA Encryption as it does not protect users from [[Public-key-Crypto#^078369|IND-CCA attacks]]:
 ![[Pasted image 20220128192053.png|450]]

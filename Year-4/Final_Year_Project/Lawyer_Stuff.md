@@ -1,0 +1,2 @@
+
+When two companies are entering a contract with each other, one of the companies will have the "pen". The company with the pen is responsible for drafting the contract and the other company will have to look over the contract to ensure it is okay.
